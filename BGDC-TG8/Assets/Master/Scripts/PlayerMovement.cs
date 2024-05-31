@@ -4,19 +4,23 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField]
     public float movSpeed;
-    float speedX, speedY;
+
+    private float moveHorizontal, moveVertical;
     Rigidbody2D rb;
 
-    private void Start()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
-    private void Update()
+    private void FixedUpdate()
     {
-        speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
-        speedY = Input.GetAxisRaw("Vertical") * movSpeed;
-        rb.velocity = new Vector2(speedX, speedY);
+        moveHorizontal = Input.GetAxisRaw("Horizontal") * movSpeed;
+        moveVertical = Input.GetAxisRaw("Vertical") * movSpeed;
+        rb.velocity = new Vector2(moveHorizontal, moveVertical);
+
+        Vector2 direction = new Vector2 (moveHorizontal, moveVertical);
+        FindObjectOfType<PlayerAnimation>().SetDirection(direction);
     }
 }
