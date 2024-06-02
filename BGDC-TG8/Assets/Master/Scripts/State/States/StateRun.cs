@@ -4,15 +4,16 @@ public class StateRun : State
 {
     [SerializeField] private State idleState;
 
-    public override void Enter()
-    {
-        var moveAnimation = movement.Animation;
-        moveAnimation.LastDirectionIndex = moveAnimation.IndexOf(parameter: movement.Direction);
-        moveAnimation.Animator.Play(stateName: list.List[index: moveAnimation.LastDirectionIndex]);
-    }
-
     public override void DoUpdate()
     {
-        if (movement.Direction.magnitude <= 0f) stateMachine.TransitionTo(nextState: idleState);
+        var player = this.player;
+        var playerMovementDirection = player.Movement.Direction;
+        if (playerMovementDirection.magnitude <= 0f) player.StateMachine.TransitionTo(nextState: idleState);
+        else
+        {
+            var directionAnimation = player.AnimationDirection;
+            directionAnimation.LastDirectionIndex = directionAnimation.IndexOf(parameter: playerMovementDirection);
+            directionAnimation.Animator.Play(stateName: list.List[index: directionAnimation.LastDirectionIndex]);
+        }
     }
 }

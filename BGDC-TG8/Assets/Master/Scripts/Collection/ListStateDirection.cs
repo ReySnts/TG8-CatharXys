@@ -14,7 +14,6 @@ public class ListStateDirection : MonoBehaviour, IList<string>
         var underScoreStateType = "_" + stateType.ToString();
         list.Add(DirectionType.North.ToString() + underScoreStateType);
         list.Add(DirectionType.NorthWest.ToString() + underScoreStateType);
-        list.Add(DirectionType.NorthWest.ToString() + underScoreStateType);
         list.Add(DirectionType.West.ToString() + underScoreStateType);
         list.Add(DirectionType.SouthWest.ToString() + underScoreStateType);
         list.Add(DirectionType.South.ToString() + underScoreStateType);

@@ -1,4 +1,4 @@
 public class FirstVariableName
 {
-    public const string MOVE_SPEED = "movSpeed";
+    public const string MOVE_SPEED = "moveSpeed";
 }
