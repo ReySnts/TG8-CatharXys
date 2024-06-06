@@ -10,11 +10,14 @@ public class Player : MonoBehaviour, IPlayer
 
     public IStateMachine<State> StateMachine { get; private set; }
 
+    public IWeapon Weapon { get; private set; }
+
     private void Awake()
     {
         AnimationDirection = GetComponentInChildren<IAnimationDirection>();
         Input = GetComponentInChildren<IInput>();
         Movement = GetComponentInChildren<IMovement>();
         StateMachine = GetComponentInChildren<IStateMachine<State>>();
+        Weapon = GetComponentInChildren<IWeapon>();
     }
 }

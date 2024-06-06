@@ -7,4 +7,6 @@ public interface IPlayer
     public abstract IMovement Movement { get; }
 
     public abstract IStateMachine<State> StateMachine { get; }
+
+    public abstract IWeapon Weapon { get; }
 }
