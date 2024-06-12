@@ -1,0 +1,1 @@
+public interface IListScriptableObjectBoss : IListScriptableObject<ScriptableObjectBoss> { }
