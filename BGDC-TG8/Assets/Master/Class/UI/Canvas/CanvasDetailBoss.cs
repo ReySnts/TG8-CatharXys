@@ -8,5 +8,5 @@ public class CanvasDetailBoss : MonoBehaviour, ICanvasDetailBoss
 
     private void Awake() => iCanvasMenuEncyclopedia = GetComponentInParent<ICanvasMenuEncyclopedia>();
 
-    private void Update() => IScriptableObjectBoss = iCanvasMenuEncyclopedia.ListScriptableObjectBoss.List[iCanvasMenuEncyclopedia.Index];
+    private void Update() => IScriptableObjectBoss = iCanvasMenuEncyclopedia.IListScriptableObjectBoss.List[iCanvasMenuEncyclopedia.Index];
 }

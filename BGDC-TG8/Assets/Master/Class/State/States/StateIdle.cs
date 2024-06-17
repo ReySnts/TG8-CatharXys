@@ -6,11 +6,11 @@ public class StateIdle : State
 
     public override void DoUpdate()
     {
-        var player = this.player;
-        if (player.Movement.Direction.magnitude > 0f) player.StateMachine.TransitionTo(nextState: runState);
+        var character = iCharacter;
+        if (character.IMovement.Direction.magnitude > 0f) character.IStateMachine.TransitionTo(nextState: runState);
         else
         {
-            var directionAnimation = player.AnimationDirection;
+            var directionAnimation = character.IAnimationDirection;
             directionAnimation.Animator.Play(stateName: list.List[index: directionAnimation.LastDirectionIndex]);
         }
     }

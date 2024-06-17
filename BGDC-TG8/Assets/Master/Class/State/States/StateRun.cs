@@ -6,12 +6,12 @@ public class StateRun : State
 
     public override void DoUpdate()
     {
-        var player = this.player;
-        var playerMovementDirection = player.Movement.Direction;
-        if (playerMovementDirection.magnitude <= 0f) player.StateMachine.TransitionTo(nextState: idleState);
+        var character = iCharacter;
+        var playerMovementDirection = character.IMovement.Direction;
+        if (playerMovementDirection.magnitude <= 0f) character.IStateMachine.TransitionTo(nextState: idleState);
         else
         {
-            var directionAnimation = player.AnimationDirection;
+            var directionAnimation = character.IAnimationDirection;
             directionAnimation.LastDirectionIndex = directionAnimation.IndexOf(parameter: playerMovementDirection);
             directionAnimation.Animator.Play(stateName: list.List[index: directionAnimation.LastDirectionIndex]);
         }

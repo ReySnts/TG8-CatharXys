@@ -14,7 +14,7 @@ public class PlayerWeapon : MonoBehaviour, IWeapon
 
     private void Update()
     {
-        if (iScene.IPlayer.Input.LeftMouseButtonDown)
+        if (iScene.IPlayer.IInput.LeftMouseButtonDown)
         {
             var mousePointerClickPosition = iScene.ICamera.Camera.ScreenToWorldPoint(Input.mousePosition);
             iFactory.GetProduct(parameter: mousePointerClickPosition);
