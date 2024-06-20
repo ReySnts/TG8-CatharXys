@@ -12,6 +12,8 @@ public class Player : MonoBehaviour, IPlayer
 
     public IWeapon IWeapon { get; private set; }
 
+    public IHealth IHealth { get; private set; }
+
     private void Awake()
     {
         IAnimationDirection = GetComponentInChildren<IAnimationDirection>();
@@ -19,5 +21,6 @@ public class Player : MonoBehaviour, IPlayer
         IMovement = GetComponentInChildren<IMovement>();
         IStateMachine = GetComponentInChildren<IStateMachine<IState>>();
         IWeapon = GetComponentInChildren<IWeapon>();
+        IHealth = GetComponent<IHealth>();
     }
 }
