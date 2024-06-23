@@ -7,4 +7,6 @@ public class PlayerInput : MonoBehaviour, IInput
     public float AxisRawVertical => Input.GetAxisRaw(InputAxisName.VERTICAL);
 
     public bool LeftMouseButtonDown => Input.GetMouseButtonDown(button: 0);
+
+    public Vector3 MousePosition => Input.mousePosition;
 }

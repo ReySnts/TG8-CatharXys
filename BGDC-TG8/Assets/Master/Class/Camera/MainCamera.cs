@@ -2,7 +2,15 @@ using UnityEngine;
 
 public class MainCamera : MonoBehaviour, ICamera
 {
-    public Camera Camera { get; private set; }
+    public Vector3 MousePointerClickPosition => _camera.ScreenToWorldPoint(position: iScene.IPlayer.IInput.MousePosition);
 
-    private void Awake() => Camera = GetComponent<Camera>();
+    private Camera _camera;
+
+    private IScene iScene;
+
+    private void Awake()
+    {
+        _camera = GetComponent<Camera>();
+        iScene = GetComponentInParent<IScene>();
+    }
 }

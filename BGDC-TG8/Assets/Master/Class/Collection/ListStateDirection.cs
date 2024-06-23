@@ -1,26 +1,12 @@
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ListStateDirection : MonoBehaviour, IList<string>
+public class ListStateDirection : ListScript<string>
 {
     [SerializeField] private StateType stateType;
 
-    private readonly List<string> list = new List<string>();
-
-    public List<string> List => list;
-
-    private void Awake()
+    protected override void Awake()
     {
-        var underScoreStateType = "_" + stateType.ToString();
-        list.Add(DirectionType.North.ToString() + underScoreStateType);
-        list.Add(DirectionType.NorthWest.ToString() + underScoreStateType);
-        list.Add(DirectionType.West.ToString() + underScoreStateType);
-        list.Add(DirectionType.SouthWest.ToString() + underScoreStateType);
-        list.Add(DirectionType.South.ToString() + underScoreStateType);
-        list.Add(DirectionType.SouthEast.ToString() + underScoreStateType);
-        list.Add(DirectionType.East.ToString() + underScoreStateType);
-        list.Add(DirectionType.NorthEast.ToString() + underScoreStateType);
+        var directionTypeList = GetComponentInParent<IList<DirectionType>>().List;
+        foreach (var directionType in directionTypeList) list.Add(directionType.ToString() + "_" + stateType.ToString());
     }
-
-    private void OnDestroy() => list.Clear();
 }

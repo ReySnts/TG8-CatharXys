@@ -1,1 +1,1 @@
-public interface IWeapon { }
+public interface IWeapon : IGameObject { }
