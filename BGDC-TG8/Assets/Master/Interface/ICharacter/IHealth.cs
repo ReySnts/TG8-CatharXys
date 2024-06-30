@@ -7,5 +7,7 @@ public interface IHealth
     abstract float maxHealth { get; set; }
     abstract float currentHealth { get; set; }
 
-    public void takeDamage();
+    public void takeDamage(float damageAmount);
+
+    public void heal(float healAmount);
 }

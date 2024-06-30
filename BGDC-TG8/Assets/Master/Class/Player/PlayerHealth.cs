@@ -7,14 +7,45 @@ public class PlayerHealth : MonoBehaviour, IHealth
     public float maxHealth { get ; set ; }
     public float currentHealth { get ; set ; }
 
-    public void takeDamage(float damage)
-    {
-        currentHealth -= damage;
+    public GameEvent onPlayerHealthChanged;
 
-        if(currentHealth <= 0)
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        GameObject objectCollisioned = GameObject.Find(collision.gameObject.name);
+
+        if (collision.CompareTag("Damage"))
         {
-            //playerDies();
+
+            //float damageAmount;
+            //takeDamage();
         }
+        else if (collision.CompareTag("Heal"))
+        {
+
+            //float healAmount;
+            //heal();
+        }
+    }
+
+    public void takeDamage(float damageAmount)
+    {
+        currentHealth -= damageAmount;
+        Debug.Log(currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            playerDies();
+        }
+    }
+
+    void playerDies()
+    {
+        Debug.Log("Dies");
+    }
+
+    public void heal(float healAmount)
+    {
+        Debug.Log(currentHealth);
     }
     
     void Start()

@@ -5,28 +5,24 @@ using UnityEngine.UI;
 
 public class HealthBarManager : MonoBehaviour
 {
-    GameObject Fill = GameObject.Find("Fill");
-    Image fillImage = Fill.GetComponent<Image>();
 
+    public GameObject objectFill;
     GameObject player;
     PlayerHealth playerHealth;
+    Image fillImage;
 
     void updateHealthBar()
     {
         
         fillImage.fillAmount = playerHealth.currentHealth/100f;
-        
     }
 
     private void Awake()
     {
+        objectFill = transform.GetChild(1).gameObject;
+        fillImage = objectFill.GetComponent<Image>();
         player = GameObject.Find("Player");
         playerHealth = player.GetComponent<PlayerHealth>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
