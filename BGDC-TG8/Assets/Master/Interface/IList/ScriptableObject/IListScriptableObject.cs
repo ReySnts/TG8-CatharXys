@@ -1,3 +1,1 @@
-using UnityEngine;
-
-public interface IListScriptableObject<TScriptableObject> : IList<TScriptableObject> where TScriptableObject : ScriptableObject { }
+public interface IListScriptableObject<TScriptableObject> : IList<TScriptableObject> where TScriptableObject : IScriptableObject { }

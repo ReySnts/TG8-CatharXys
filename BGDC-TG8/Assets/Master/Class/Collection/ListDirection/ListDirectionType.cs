@@ -1,4 +1,4 @@
-public class ListDirectionType : ListScript<DirectionType>, IList<DirectionType>
+public sealed class ListDirectionType : ListScript<DirectionType>, IList<DirectionType>
 {
     protected override void Awake()
     {

@@ -1,12 +1,13 @@
 using UnityEngine;
 
-public class GridIcons : MonoBehaviour
+[RequireComponent(typeof(IFactory<IScriptableObjectBoss>))]
+
+public sealed class GridIcons : MonoBehaviour
 {
     private void Awake()
     {
-        var iFactory = GetComponent<IFactory<int>>();
+        var iFactory = GetComponent<IFactory<IScriptableObjectBoss>>();
         var iList = GetComponentInParent<IListScriptableObjectBoss>();
-        var listCount = iList.List.Count;
-        for (int index = 0; index < listCount; index++) iFactory.GetProduct(index);
+        foreach (var scriptableObjectBoss in iList.List) iFactory.GetProduct(parameter: scriptableObjectBoss);
     }
 }

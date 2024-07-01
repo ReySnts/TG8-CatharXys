@@ -86,8 +86,9 @@ GameObject:
   - component: {fileID: 625287135190190772}
   - component: {fileID: 625287135190190775}
   - component: {fileID: 625287135190190773}
-  - component: {fileID: 981269558328648678}
-  - component: {fileID: 2521517975612266429}
+  - component: {fileID: 383887601857103597}
+  - component: {fileID: 8044205170626561086}
+  - component: {fileID: 8022596614407944691}
   m_Layer: 5
   m_Name: CanvasMenuEncyclopedia
   m_TagString: Untagged
@@ -155,7 +156,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &981269558328648678
+--- !u!114 &383887601857103597
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803e16c302ed9e0408cf65817809eaba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2521517975612266429
+--- !u!114 &8044205170626561086
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,10 +177,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 625287135190190771}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1207d3324d5c6674b8b90f067f8965fe, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c90ef67dbe17354d81773fdc6dbbb9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Index>k__BackingField: 0
+  scriptableObjectScript: {fileID: 0}
+--- !u!114 &8022596614407944691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625287135190190771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced92fd0cea849245938023339153ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <IsActive>k__BackingField: 0
 --- !u!1 &8101678722077128718
 GameObject:
   m_ObjectHideFlags: 0

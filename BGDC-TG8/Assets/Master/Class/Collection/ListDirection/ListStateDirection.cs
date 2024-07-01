@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ListStateDirection : ListScript<string>
+public sealed class ListStateDirection : ListScript<string>
 {
     [SerializeField] private StateType stateType;
 

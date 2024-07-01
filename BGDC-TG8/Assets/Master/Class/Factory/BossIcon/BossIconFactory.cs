@@ -1,14 +1,14 @@
 using UnityEngine;
 
-public class BossIconFactory : MonoBehaviour, IFactory<int>
+public sealed class BossIconFactory : MonoBehaviour, IFactory<IScriptableObjectBoss>
 {
     [SerializeField] private GameObject imageIcon;
 
-    public IProduct<int> GetProduct(int index)
+    public IProduct<IScriptableObjectBoss> GetProduct(IScriptableObjectBoss iScriptableObjectBoss)
     {
         var instance = Instantiate(original: imageIcon, parent: transform);
-        var newProduct = instance.GetComponent<IProduct<int>>();
-        newProduct.Initialize(index);
+        var newProduct = instance.GetComponent<IProduct<IScriptableObjectBoss>>();
+        newProduct.Initialize(iScriptableObjectBoss);
         return newProduct;
     }
 }
