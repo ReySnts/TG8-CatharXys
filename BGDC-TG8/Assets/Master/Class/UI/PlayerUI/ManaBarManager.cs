@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBarManager : MonoBehaviour
+public class ManaBarManager : MonoBehaviour
 {
     public Slider slider;
 
@@ -14,8 +14,8 @@ public class HealthBarManager : MonoBehaviour
     public void updateHealthBar(Component sender, object data)
     {
         Debug.Log(data);
-        float currentHealth = (float)data;
+        float currentMana = (float)data;
 
-        slider.value = currentHealth;
+        slider.value = currentMana;
     }
 }

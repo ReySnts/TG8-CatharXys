@@ -9,33 +9,43 @@ public class PlayerHealth : MonoBehaviour, IHealth
 
     public GameEvent onPlayerHealthChanged;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void takeDamage(Component sender, object data)
     {
-        GameObject objectCollisioned = GameObject.Find(collision.gameObject.name);
-
-        if (collision.CompareTag("Damage"))
+        Debug.Log("damaged");
+        if (data is float)
         {
+            float damageAmount = (float)data;
+            currentHealth -= damageAmount;
+            Debug.Log(currentHealth);
 
-            //float damageAmount;
-            //takeDamage();
-        }
-        else if (collision.CompareTag("Heal"))
-        {
+            if (currentHealth <= 0)
+            {
+                playerDies();
+            }
 
-            //float healAmount;
-            //heal();
+            onPlayerHealthChanged.Raise(this, currentHealth);
         }
+        else { Debug.Log("damageAmount is not float"); }
     }
 
-    public void takeDamage(float damageAmount)
+    public void heal(Component sender, object data)
     {
-        currentHealth -= damageAmount;
-        Debug.Log(currentHealth);
-
-        if (currentHealth <= 0)
+        Debug.Log("healed");
+        if (data is float)
         {
-            playerDies();
+            float healAmount = (float)data;
+            currentHealth += healAmount;
+            Debug.Log(currentHealth);
+
+            if(currentHealth >= maxHealth)
+            {
+                currentHealth = maxHealth;
+            }
+
+            onPlayerHealthChanged.Raise(this, currentHealth);
         }
+        else { Debug.Log("healAmount is not float"); }
+
     }
 
     void playerDies()
@@ -43,18 +53,10 @@ public class PlayerHealth : MonoBehaviour, IHealth
         Debug.Log("Dies");
     }
 
-    public void heal(float healAmount)
-    {
-        Debug.Log(currentHealth);
-    }
-    
     void Start()
     {
+        maxHealth = 100;
         currentHealth = maxHealth;
     }
 
-    void Update()
-    {
-        
-    }
 }

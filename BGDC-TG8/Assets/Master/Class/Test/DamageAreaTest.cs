@@ -4,26 +4,16 @@ using UnityEngine;
 
 public class DamageAreaTest : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject playerHealth;
-    public PlayerHealth PlayerHealth;
+    public GameEvent onPlayerDamaged;
 
-    int damageAmount = 10;
-
-    void Awake()
-    {
-        player = GameObject.Find("Player");
-        //playerHealth = transform.GetChild(5).player;
-        //PlayerHealth = playerHealth.GetComponent<>;
-        Debug.Log(damageAmount);
-    }
-
+    float damageAmount = 10;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             //PlayerHealth.takeDamage(damageAmount);
             Debug.Log(damageAmount);
+            onPlayerDamaged.Raise(this, damageAmount);
         }
     }
 

@@ -4,29 +4,20 @@ using UnityEngine;
 
 public class HealAreaTest : MonoBehaviour
 {
-    GameObject player;
-    public PlayerHealth PlayerHealth;
+    public GameEvent onPlayerHealed;
 
-    int healAmount = 10;
-
-
-    void Awake()
-    {
-        player = GameObject.Find("Health");
-        //PlayerHealth = player.GetComponent<PlayerHealth>;
-
-    }
-
+    float healAmount = 10;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //PlayerHealth.heal(healAmount);
+            //PlayerHealth.takeDamage(damageAmount);
             Debug.Log(healAmount);
+            onPlayerHealed.Raise(this, healAmount);
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void Awake()
     {
         
     }
