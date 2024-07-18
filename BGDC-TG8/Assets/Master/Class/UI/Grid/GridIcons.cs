@@ -8,6 +8,6 @@ public sealed class GridIcons : MonoBehaviour
     {
         var iFactory = GetComponent<IFactory<IScriptableObjectBoss>>();
         var iList = GetComponentInParent<IListScriptableObjectBoss>();
-        foreach (var scriptableObjectBoss in iList.List) iFactory.GetProduct(parameter: scriptableObjectBoss);
+        foreach (var item in iList.List) iFactory.GetProduct(parameter: item);
     }
 }

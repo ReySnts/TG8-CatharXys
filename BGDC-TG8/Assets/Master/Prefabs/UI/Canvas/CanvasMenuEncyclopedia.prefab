@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 383887601857103597}
   - component: {fileID: 8044205170626561086}
   - component: {fileID: 8022596614407944691}
+  - component: {fileID: 3351974683835234821}
   m_Layer: 5
   m_Name: CanvasMenuEncyclopedia
   m_TagString: Untagged
@@ -194,6 +195,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <IsActive>k__BackingField: 0
+--- !u!114 &3351974683835234821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625287135190190771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b2ab047ff93ca4c80ef65b172b7575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameObject: {fileID: 625287135190190771}
 --- !u!1 &8101678722077128718
 GameObject:
   m_ObjectHideFlags: 0

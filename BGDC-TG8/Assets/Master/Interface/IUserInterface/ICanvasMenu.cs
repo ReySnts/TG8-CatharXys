@@ -1,0 +1,4 @@
+public interface ICanvasMenu : IGameObject
+{
+    
+}

@@ -1,7 +1,8 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = FileName.BOSS, menuName = FilePath.BOSS)]
-public class ScriptableObjectBoss : ScriptableObjectScript, IScriptableObjectBoss
+
+public sealed class ScriptableObjectBoss : ScriptableObjectScript, IScriptableObjectBoss
 {
     [field: SerializeField, Space(height: 10f)] public string Name { get; private set; }
 
