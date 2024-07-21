@@ -12,6 +12,6 @@ public abstract class TextScript : MonoBehaviour
     protected virtual void OnEnable()
     {
         tMP = GetComponent<TextMeshProUGUI>();
-        selectedScriptableObjectBoss = GetComponentInParent<IScriptableObjectBossContainer>().IScriptableObject;
+        selectedScriptableObjectBoss = GetComponentInParent<ScriptableObjectContainer<ScriptableObjectBoss>>().ScriptableObject;
     }
 }

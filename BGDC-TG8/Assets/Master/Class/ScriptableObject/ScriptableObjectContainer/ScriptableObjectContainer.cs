@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public abstract class ScriptableObjectContainer<TScriptableObject> : MonoBehaviour, IScriptableObjectContainer<TScriptableObject> where TScriptableObject : IScriptableObject
+public abstract class ScriptableObjectContainer<TScriptableObject> : MonoBehaviour where TScriptableObject : ScriptableObject
 {
-    [SerializeField] protected TScriptableObject scriptableObjectScript;
+    [SerializeField] protected TScriptableObject scriptableObject;
 
-    public TScriptableObject IScriptableObject { get => scriptableObjectScript; set => scriptableObjectScript = value; }
+    public TScriptableObject ScriptableObject { get => scriptableObject; set => scriptableObject = value; }
 }

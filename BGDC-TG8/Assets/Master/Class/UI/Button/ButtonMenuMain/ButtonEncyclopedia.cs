@@ -1,14 +1,6 @@
-public class ButtonEncyclopedia : ButtonScript
+public sealed class ButtonEncyclopedia : ButtonMenu
 {
-    protected override ButtonType ButtonType => ButtonType.Encyclopedia;
+    public override ButtonType Type => ButtonType.Encyclopedia;
 
-    private IStrategy<ICanvasMenu> iStrategy;
-
-    protected override void OnEnable()
-    {
-        iStrategy = GetComponentInParent<IStrategy<ICanvasMenu>>();
-        base.OnEnable();
-    }
-
-    protected override void OnClick() => iStrategy.SetStrategy(strategy: new CanvasMenuEncyclopedia());
+    protected override void OnClick() => menuStateMachine.TransitionTo(nextState: MenuType.Encyclopedia);
 }

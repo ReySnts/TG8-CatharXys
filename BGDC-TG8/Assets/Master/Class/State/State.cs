@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public abstract class State : MonoBehaviour, IState
+public abstract class State : MonoBehaviour
 {
-    protected IList<string> list;
+    protected ListScript<string> list;
 
     protected ICharacter iCharacter;
 
@@ -10,7 +10,7 @@ public abstract class State : MonoBehaviour, IState
 
     private void Awake()
     {
-        list = GetComponent<IList<string>>();
+        list = GetComponent<ListScript<string>>();
         iCharacter = GetComponentInParent<ICharacter>();
     }
 }

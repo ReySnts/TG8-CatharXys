@@ -8,7 +8,7 @@ public class Player : MonoBehaviour, IPlayer
 
     public IMovement IMovement { get; private set; }
 
-    public IStateMachine<IState> IStateMachine { get; private set; }
+    public IStateMachine<State> IStateMachine { get; private set; }
 
     public IWeapon IWeapon { get; private set; }
 
@@ -17,7 +17,7 @@ public class Player : MonoBehaviour, IPlayer
         IAnimationDirection = GetComponentInChildren<IAnimationDirection>();
         IInput = GetComponentInChildren<IInput>();
         IMovement = GetComponentInChildren<IMovement>();
-        IStateMachine = GetComponentInChildren<IStateMachine<IState>>();
+        IStateMachine = GetComponentInChildren<IStateMachine<State>>();
         IWeapon = GetComponentInChildren<IWeapon>();
     }
 }

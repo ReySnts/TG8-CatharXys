@@ -1,32 +1,32 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-[RequireComponent(typeof(IScriptableObjectBossContainer))]
+[RequireComponent(requiredComponent: typeof(ScriptableObjectContainer<ScriptableObjectBoss>))]
 
 public sealed class ImageIcon : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    private IScriptableObjectBossContainer canvasMenuEncyclopedia;
+    private ScriptableObjectContainer<ScriptableObjectBoss> canvasMenuEncyclopedia;
 
-    private IScriptableObjectBossContainer iScriptableObjectBossContainer;
+    private ScriptableObjectContainer<ScriptableObjectBoss> iScriptableObjectBossContainer;
 
     private ISwitchable iSwitchable;
 
     private void Awake()
     {
-        canvasMenuEncyclopedia = transform.parent.GetComponentInParent<IScriptableObjectBossContainer>();
-        iScriptableObjectBossContainer = GetComponent<IScriptableObjectBossContainer>();
+        canvasMenuEncyclopedia = transform.parent.GetComponentInParent<ScriptableObjectContainer<ScriptableObjectBoss>>();
+        iScriptableObjectBossContainer = GetComponent<ScriptableObjectContainer<ScriptableObjectBoss>>();
         iSwitchable = GetComponentInParent<ISwitchable>();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
         iSwitchable.IsActive = true;
-        canvasMenuEncyclopedia.IScriptableObject = iScriptableObjectBossContainer.IScriptableObject;
+        canvasMenuEncyclopedia.ScriptableObject = iScriptableObjectBossContainer.ScriptableObject;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        canvasMenuEncyclopedia.IScriptableObject = null;
+        canvasMenuEncyclopedia.ScriptableObject = null;
         iSwitchable.IsActive = false;
     }
 }

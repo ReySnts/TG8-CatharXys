@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class CanvasMenu : MonoBehaviour, ICanvasMenu
+public abstract class CanvasMenu : MonoBehaviour
 {
-    public GameObject GameObject => gameObject;
+    public abstract MenuType Type { get; }
 }

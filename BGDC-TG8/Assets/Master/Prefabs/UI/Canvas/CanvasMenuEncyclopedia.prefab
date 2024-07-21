@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c90ef67dbe17354d81773fdc6dbbb9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scriptableObjectScript: {fileID: 0}
+  scriptableObject: {fileID: 0}
 --- !u!114 &8022596614407944691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,7 +207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87b2ab047ff93ca4c80ef65b172b7575, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameObject: {fileID: 625287135190190771}
 --- !u!1 &8101678722077128718
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,11 +217,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5826460767865280636}
   - component: {fileID: 5313095691872405072}
-  - component: {fileID: 3898318730096606588}
   - component: {fileID: 1410137843892173487}
   - component: {fileID: 5669050407506299397}
   m_Layer: 5
-  m_Name: GridIcons
+  m_Name: LayoutGroupIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -242,10 +240,10 @@ RectTransform:
   m_Father: {fileID: 625287135190190772}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -475, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 200, y: 0}
+  m_SizeDelta: {x: 400, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5313095691872405072
 MonoBehaviour:
@@ -262,29 +260,15 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: -700
+    m_Top: 60
     m_Bottom: 0
-  m_ChildAlignment: 3
+  m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 200, y: 250}
+  m_CellSize: {x: 45, y: 45}
+  m_Spacing: {x: 80, y: 80}
   m_Constraint: 1
   m_ConstraintCount: 3
---- !u!114 &3898318730096606588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8101678722077128718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalFit: 2
-  m_VerticalFit: 2
 --- !u!114 &1410137843892173487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31526c856dd632f4e9ed1dfc4d01b768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageIcon: {fileID: 6114036808532898499, guid: 2e19e1d5ec84260448842fd3d95e3f33, type: 3}
+  original: {fileID: 6114036808532898499, guid: 2e19e1d5ec84260448842fd3d95e3f33, type: 3}
 --- !u!114 &5669050407506299397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,7 +331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1849966239818528866, guid: f177027be8747204f817d099301b1f8f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 960
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 1849966239818528866, guid: f177027be8747204f817d099301b1f8f, type: 3}
       propertyPath: m_SizeDelta.y
@@ -383,7 +367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1849966239818528866, guid: f177027be8747204f817d099301b1f8f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -480
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 1849966239818528866, guid: f177027be8747204f817d099301b1f8f, type: 3}
       propertyPath: m_AnchoredPosition.y

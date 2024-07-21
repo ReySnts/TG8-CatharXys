@@ -1,1 +1,0 @@
-public interface IListScriptableObject<TScriptableObject> : IList<TScriptableObject> where TScriptableObject : IScriptableObject { }

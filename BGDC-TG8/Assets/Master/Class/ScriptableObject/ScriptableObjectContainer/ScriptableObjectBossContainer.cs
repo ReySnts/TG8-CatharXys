@@ -1,1 +1,1 @@
-public sealed class ScriptableObjectBossContainer : ScriptableObjectContainer<ScriptableObjectBoss>, IScriptableObjectBossContainer { }
+public sealed class ScriptableObjectBossContainer : ScriptableObjectContainer<ScriptableObjectBoss> { }

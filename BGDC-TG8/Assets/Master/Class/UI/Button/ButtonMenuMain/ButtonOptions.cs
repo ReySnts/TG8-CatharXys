@@ -1,9 +1,4 @@
-public sealed class ButtonOptions : ButtonScript
+public sealed class ButtonOptions : ButtonMenu
 {
-    protected override ButtonType ButtonType => ButtonType.Options;
-
-    protected override void OnClick()
-    {
-
-    }
+    public override ButtonType Type => ButtonType.Options;
 }

@@ -5,5 +5,5 @@ using UnityEngine.UI;
 
 public sealed class ImageDisplay : MonoBehaviour
 {
-    private void OnEnable() => GetComponent<Image>().sprite = GetComponentInParent<IScriptableObjectBossContainer>().IScriptableObject?.DisplayImage;
+    private void OnEnable() => GetComponent<Image>().sprite = GetComponentInParent<ScriptableObjectContainer<ScriptableObjectBoss>>().ScriptableObject?.DisplayImage;
 }

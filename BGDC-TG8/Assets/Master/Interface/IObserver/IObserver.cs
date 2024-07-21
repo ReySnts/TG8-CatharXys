@@ -6,3 +6,10 @@ public interface IObserver<T>
 
     public abstract void NotifyAllToChange(T t);
 }
+
+public interface IObserver
+{
+    public abstract event UnityAction OnAllNotified;
+
+    public abstract void NotifyAllToChange();
+}
