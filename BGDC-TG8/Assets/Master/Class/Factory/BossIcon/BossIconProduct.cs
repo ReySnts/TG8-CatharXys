@@ -1,13 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BossIconProduct : MonoBehaviour, IProduct<int>, IIndexable
-{
-    [field: SerializeField] public int Index { get; set; }
+[RequireComponent(requiredComponent: typeof(Image), requiredComponent2: typeof(ScriptableObjectContainer<ScriptableObjectBoss>))]
 
-    public void Initialize(int index)
+public sealed class BossIconProduct : MonoBehaviour, IProduct<ScriptableObjectBoss>
+{
+    public void Initialize(ScriptableObjectBoss scriptableObjectBoss)
     {
-        Index = index;
-        GetComponent<Image>().sprite = GetComponentInParent<IListScriptableObjectBoss>().List[index].IconImage;
+        GetComponent<Image>().sprite = scriptableObjectBoss.IconImage;
+        GetComponent<ScriptableObjectContainer<ScriptableObjectBoss>>().ScriptableObject = scriptableObjectBoss;
     }
 }

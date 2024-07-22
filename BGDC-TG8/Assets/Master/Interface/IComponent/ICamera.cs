@@ -2,5 +2,5 @@ using UnityEngine;
 
 public interface ICamera
 {
-    public abstract Camera Camera { get; }
+    public abstract Vector3 MousePointerClickPosition { get; }
 }

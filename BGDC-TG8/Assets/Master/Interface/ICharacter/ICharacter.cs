@@ -4,5 +4,5 @@ public interface ICharacter
 
     public abstract IMovement IMovement { get; }
 
-    public abstract IStateMachine<IState> IStateMachine { get; }
+    public abstract IStateMachine<State> IStateMachine { get; }
 }

@@ -1,10 +1,4 @@
-using UnityEngine;
-
-public class CanvasMenuEncyclopedia : MonoBehaviour, ICanvasMenuEncyclopedia
+public sealed class CanvasMenuEncyclopedia : CanvasMenu
 {
-    [field: SerializeField] public int Index { get; set; }
-
-    public IListScriptableObjectBoss IListScriptableObjectBoss { get; private set; }
-
-    private void Awake() => IListScriptableObjectBoss = GetComponent<IListScriptableObjectBoss>();
+    public override MenuType Type => MenuType.Encyclopedia;
 }
