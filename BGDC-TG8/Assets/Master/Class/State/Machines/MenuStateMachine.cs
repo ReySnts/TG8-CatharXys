@@ -10,13 +10,16 @@ public sealed class MenuStateMachine : StateMachineScript<CanvasMenu, MenuType>
     private void Awake()
     {
         dictionary = GetComponent<DictionaryScript<MenuType, CanvasMenu>>().Dictionary;
-        TransitionTo(nextState: currentState.Type);
+        currentState.gameObject.SetActive(value: true);
     }
 
     public override void TransitionTo(MenuType nextState)
     {
-        currentState.gameObject.SetActive(value: false);
-        currentState = dictionary[nextState];
-        currentState.gameObject.SetActive(value: true);
+        if (dictionary.ContainsKey(key: nextState))
+        {
+            currentState.gameObject.SetActive(value: false);
+            currentState = dictionary[nextState];
+            currentState.gameObject.SetActive(value: true);
+        }
     }
 }
