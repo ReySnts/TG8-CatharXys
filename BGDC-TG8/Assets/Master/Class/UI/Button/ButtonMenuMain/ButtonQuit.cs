@@ -1,4 +1,4 @@
-public sealed class ButtonQuit : ButtonMenu
+public sealed class ButtonQuit : ButtonScript, IHaveType<ButtonType>
 {
-    public override ButtonType Type => ButtonType.Quit;
+    public ButtonType Type => ButtonType.Quit;
 }

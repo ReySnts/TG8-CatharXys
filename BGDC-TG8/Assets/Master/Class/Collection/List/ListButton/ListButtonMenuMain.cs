@@ -9,7 +9,7 @@ public sealed class ListButtonMenuMain : ListScript<IHaveType<ButtonType>>
         list.Add(item: gameObject.AddComponent<ButtonOptions>());
         list.Add(item: gameObject.AddComponent<ButtonEncyclopedia>());
         list.Add(item: gameObject.AddComponent<ButtonQuit>());
-        list.ForEach(action: item => Destroy(item as ButtonMenu));
+        list.ForEach(action: item => Destroy(item as ButtonScript));
         Destroy(obj: GetComponent<Button>());
     }
 }

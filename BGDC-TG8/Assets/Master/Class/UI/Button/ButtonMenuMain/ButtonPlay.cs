@@ -1,4 +1,4 @@
-public sealed class ButtonPlay : ButtonMenu
+public sealed class ButtonPlay : ButtonScript, IHaveType<ButtonType>
 {
-    public override ButtonType Type => ButtonType.Play;
+    public ButtonType Type => ButtonType.Play;
 }
