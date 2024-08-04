@@ -1,1 +1,0 @@
-public sealed class ButtonMenuFactory : FactoryScript<IHaveType<ButtonType>> { }

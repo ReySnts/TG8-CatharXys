@@ -1,5 +1,5 @@
 using UnityEngine;
 
-[RequireComponent(requiredComponent: typeof(IFactory<IHaveType<ButtonType>>))]
+[RequireComponent(requiredComponent: typeof(AbstractFactory<IHaveType<ButtonType>>))]
 
 public sealed class ButtonMenuLayoutGroup : LayoutGroupList<IHaveType<ButtonType>> { }

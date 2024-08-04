@@ -1,14 +1,14 @@
-public abstract class ButtonMenu : ButtonScript, IHaveType<ButtonType>
+public abstract class ButtonMenu : AbstractButton, IHaveType<ButtonType>
 {
     public abstract ButtonType Type { get; }
 
     protected abstract MenuType MenuType { get; }
 
-    private StateMachineScript<CanvasMenu, MenuType> menuStateMachine;
+    private AbstractStateMachine<CanvasMenu, MenuType> menuStateMachine;
 
     protected override void OnEnable()
     {
-        menuStateMachine = GetComponentInParent<StateMachineScript<CanvasMenu, MenuType>>();
+        menuStateMachine = GetComponentInParent<AbstractStateMachine<CanvasMenu, MenuType>>();
         base.OnEnable();
     }
 

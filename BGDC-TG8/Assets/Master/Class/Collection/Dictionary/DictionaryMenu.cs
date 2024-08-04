@@ -1,6 +1,6 @@
 using System.Linq;
 
-public sealed class DictionaryMenu : DictionaryScript<MenuType, CanvasMenu>
+public sealed class DictionaryMenu : AbstractDictionary<MenuType, CanvasMenu>
 {
     protected override void Awake()
     {

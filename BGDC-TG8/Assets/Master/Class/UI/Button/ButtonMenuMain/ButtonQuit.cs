@@ -1,4 +1,4 @@
-public sealed class ButtonQuit : ButtonScript, IHaveType<ButtonType>
+public sealed class ButtonQuit : AbstractButton, IHaveType<ButtonType>
 {
     public ButtonType Type => ButtonType.Quit;
 }

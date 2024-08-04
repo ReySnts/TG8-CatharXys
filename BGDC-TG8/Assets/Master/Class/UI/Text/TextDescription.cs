@@ -1,4 +1,4 @@
-public sealed class TextDescription : TextScript
+public sealed class TextDescription : AbstractText
 {
     protected override void OnEnable()
     {

@@ -1,7 +1,7 @@
 using System.Linq;
 using UnityEngine;
 
-public abstract class ListScriptableObject<TScriptableObject> : ListScript<TScriptableObject> where TScriptableObject : ScriptableObject
+public abstract class ListScriptableObject<TScriptableObject> : AbstractList<TScriptableObject> where TScriptableObject : ScriptableObject
 {
     protected abstract string SpecificPath {  get; }
 

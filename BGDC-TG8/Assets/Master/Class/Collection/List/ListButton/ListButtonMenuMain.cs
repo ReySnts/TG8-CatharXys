@@ -1,6 +1,6 @@
 using UnityEngine.UI;
 
-public sealed class ListButtonMenuMain : ListScript<IHaveType<ButtonType>>
+public sealed class ListButtonMenuMain : AbstractList<IHaveType<ButtonType>>
 {
     protected override void Awake()
     {
@@ -9,7 +9,7 @@ public sealed class ListButtonMenuMain : ListScript<IHaveType<ButtonType>>
         list.Add(item: gameObject.AddComponent<ButtonOptions>());
         list.Add(item: gameObject.AddComponent<ButtonEncyclopedia>());
         list.Add(item: gameObject.AddComponent<ButtonQuit>());
-        list.ForEach(action: item => Destroy(item as ButtonScript));
+        list.ForEach(action: item => Destroy(item as AbstractButton));
         Destroy(obj: GetComponent<Button>());
     }
 }

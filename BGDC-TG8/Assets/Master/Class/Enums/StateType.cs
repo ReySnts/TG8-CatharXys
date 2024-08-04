@@ -1,5 +1,5 @@
 public enum StateType
 {
-    Facing,
-    Run
+    Idle,
+    Walk
 }
