@@ -11,13 +11,30 @@ public class Enemy : MonoBehaviour, IDamageable, IEMoveable
 
     public bool IsFacingRight { get; set; } = true;
 
+    #region State Machine Variables
+    public EnemyStateMachine StateMachine {get; set;}
+    public EnemyIdleState IdleState {get; set;}
+    public EnemyChaseState ChaseState {get; set;}
+    #endregion
+
+    private void Awake()
+    {
+        StateMachine = new EnemyStateMachine();
+
+        IdleState = new EnemyIdleState(this, StateMachine);
+        ChaseState = new EnemyChaseState(this, StateMachine);
+    }
+
     public void Start()
     {
         CurrentHealth = MaxHealth;
 
         rb = GetComponent<Rigidbody2D>();
+
+        StateMachine.Initialize(IdleState);
     }
 
+    #region Health/Die Functions
     public void Damage(float damageAmount)
     {
         CurrentHealth -= damageAmount;
@@ -30,11 +47,11 @@ public class Enemy : MonoBehaviour, IDamageable, IEMoveable
 
     public void Die()
     {
-        
+
     }
+    #endregion
 
     #region Movement Functions
-
     public void MoveEnemy(Vector2 velocity)
     {
         rb.velocity = velocity; 
@@ -57,6 +74,19 @@ public class Enemy : MonoBehaviour, IDamageable, IEMoveable
             IsFacingRight = !IsFacingRight;
         }
     }
+    #endregion
 
+    #region Animation Triggers
+
+    private void AnimationTriggerEvent (AnimationTriggerType triggerType)
+    {
+        ///To Do
+    }
+
+    public enum AnimationTriggerType
+    {
+        EnemyDamaged,
+        PlayFootstepSound
+    }
     #endregion
 }
