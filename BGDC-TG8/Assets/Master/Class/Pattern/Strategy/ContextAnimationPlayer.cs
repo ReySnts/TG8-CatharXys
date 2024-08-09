@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public sealed class StrategyAnimationPlayer : AbstractStrategy<AbstractAnimationPlayer>
+public sealed class ContextAnimationPlayer : AbstractContext<AbstractAnimationPlayer>
 {
     private AbstractScenePlayable playableScene;
 

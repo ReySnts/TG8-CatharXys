@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class AbstractStrategy<T> : MonoBehaviour
+public abstract class AbstractContext<T> : MonoBehaviour
 {
     [SerializeField] protected T strategy;
 

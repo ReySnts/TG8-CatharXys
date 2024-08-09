@@ -1,21 +1,12 @@
 using UnityEngine;
 
-public sealed class StatePlayerWalk : AbstractState
+[RequireComponent(requiredComponent: typeof(AbstractAnimationPlayer))]
+
+public sealed class StatePlayerWalk : AbstractStatePlayer
 {
     [SerializeField] private AbstractState idle;
 
-    private AbstractScenePlayable playableScene;
-
-    private AbstractStrategy<AbstractAnimationPlayer> animationStrategy;
-
-    protected override void Awake()
-    {
-        base.Awake();
-        animationStrategy = GetComponentInParent<AbstractStrategy<AbstractAnimationPlayer>>();
-        playableScene = GetComponentInParent<AbstractScenePlayable>();
-    }
-
-    public override void Enter() => animationStrategy.SetStrategy(strategy: animationStrategy.GetComponentInChildren<AnimationPlayerWalk>());
+    public override void Enter() => contextAnimationPlayer.SetStrategy(strategy: GetComponent<AnimationPlayerWalk>());
 
     public override void DoUpdate()
     {
