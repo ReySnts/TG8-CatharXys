@@ -2,20 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour, IDamageable, IEMoveable
+public class Enemy : MonoBehaviour, IDamageable, IEMoveable, ITriggerable
 {
-    [field: SerializeField] public float MaxHealth{ get; set; } = 100f;
-    public float CurrentHealth{ get; set; }
+    [field: SerializeField] public float MaxHealth{get; set;} = 100f;
+    public float CurrentHealth{get; set;}
 
-    public Rigidbody2D rb { get; set; }
+    public Rigidbody2D rb {get; set;}
 
-    public bool IsFacingRight { get; set; } = true;
+    public bool IsFacingRight {get; set;} = true;
+
+    public bool IsAggroed {get; set;}
+
+    public bool IsAttackFeasible {get; set;}
 
     #region State Machine Variables
     public EnemyStateMachine StateMachine {get; set;}
     public EnemyIdleState IdleState {get; set;}
     public EnemyChaseState ChaseState {get; set;}
     #endregion
+
+    #region Idle Variables
+    public float RandomMoveRange = 5f; 
+    public float RandomMoveSPeed = 1f;
+    #endregion 
 
     private void Awake()
     {
@@ -32,6 +41,16 @@ public class Enemy : MonoBehaviour, IDamageable, IEMoveable
         rb = GetComponent<Rigidbody2D>();
 
         StateMachine.Initialize(IdleState);
+    }
+
+    private void Update()
+    {
+        StateMachine.CurrEnemyState.FrameUpdate();
+    }
+
+    private void FixedUpdate()
+    {
+        StateMachine.CurrEnemyState.PhysicsUpdate();
     }
 
     #region Health/Die Functions
@@ -76,11 +95,23 @@ public class Enemy : MonoBehaviour, IDamageable, IEMoveable
     }
     #endregion
 
+    #region Distance Checks
+    public void SetAggroStatus(bool isAggroed)
+    {
+        IsAggroed = isAggroed;
+    }
+
+    public void SetAttackStatus(bool isAttackFeasible)
+    {
+        IsAttackFeasible = isAttackFeasible;
+    }
+    #endregion
+
     #region Animation Triggers
 
     private void AnimationTriggerEvent (AnimationTriggerType triggerType)
     {
-        ///To Do
+        StateMachine.CurrEnemyState.AnimationTriggerEvent(triggerType);
     }
 
     public enum AnimationTriggerType
