@@ -6,6 +6,6 @@ public abstract class LayoutGroupList<TItem> : MonoBehaviour
     {
         var abstractFactory = GetComponent<AbstractFactory<TItem>>();
         var abstractList = GetComponentInParent<AbstractList<TItem>>();
-        abstractList.List.ForEach(action: item => abstractFactory.GetProduct(product: item));
+        abstractList.List.ForEach(action: item => abstractFactory.GetProduct(product: item, parent: transform));
     }
 }

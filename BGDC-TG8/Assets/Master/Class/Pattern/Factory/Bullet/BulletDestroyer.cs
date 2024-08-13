@@ -9,7 +9,7 @@ public sealed class BulletDestroyer : MonoBehaviour
         if (!collision.gameObject.CompareTag(GameObjectTag.PLAYER))
         {
             Destroy(obj: Instantiate(original: basicBulletHit, position: transform.position, rotation: Quaternion.identity), t: 1f);
-            Destroy(gameObject);
+            Destroy(obj: gameObject);
         }
     }
 }
