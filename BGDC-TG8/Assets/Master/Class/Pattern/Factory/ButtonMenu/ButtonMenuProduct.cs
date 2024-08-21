@@ -1,9 +1,8 @@
 using TMPro;
-using UnityEngine;
 
-public class ButtonMenuProduct : MonoBehaviour, IProduct<IHaveType<ButtonType>>
+public class ButtonMenuProduct : AbstractProduct<IHaveType<ButtonType>>
 {
-    public void Initialize(IHaveType<ButtonType> buttonMenu)
+    public override void Initialize(IHaveType<ButtonType> buttonMenu)
     {
         gameObject.AddComponent(componentType: buttonMenu.GetType());
         GetComponentInChildren<TextMeshProUGUI>().text = buttonMenu.Type.ToString();
