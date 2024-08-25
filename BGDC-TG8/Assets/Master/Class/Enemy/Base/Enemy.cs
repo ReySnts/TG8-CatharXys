@@ -19,19 +19,30 @@ public class Enemy : MonoBehaviour, IDamageable, IEMoveable, ITriggerable
     public EnemyStateMachine StateMachine {get; set;}
     public EnemyIdleState IdleState {get; set;}
     public EnemyChaseState ChaseState {get; set;}
+    public EnemyAttackState AttackState {get; set;}
     #endregion
 
-    #region Idle Variables
-    public float RandomMoveRange = 5f; 
-    public float RandomMoveSPeed = 1f;
-    #endregion 
+    #region Scriptable Objects Variables 
+    [SerializeField] private EnemyIdleSO EnemyIdleBase;
+    [SerializeField] private EnemyAttackSO EnemyAttackBase; 
+    [SerializeField] private EnemyChaseSO EnemyChaseBase; 
+
+    public EnemyIdleSO EnemyIdleBaseInstance {get; set;}
+    public EnemyChaseSO EnemyChaseBaseInstance {get; set;}
+    public EnemyAttackSO EnemyAttackBaseInstance {get; set;} 
+    #endregion
 
     private void Awake()
     {
+        EnemyIdleBaseInstance = Instantiate(EnemyIdleBase);
+        EnemyChaseBaseInstance = Instantiate(EnemyChaseBase); 
+        EnemyAttackBaseInstance = Instantiate(EnemyAttackBase);
+
         StateMachine = new EnemyStateMachine();
 
         IdleState = new EnemyIdleState(this, StateMachine);
         ChaseState = new EnemyChaseState(this, StateMachine);
+        AttackState = new EnemyAttackState(this, StateMachine);
     }
 
     public void Start()
@@ -39,6 +50,10 @@ public class Enemy : MonoBehaviour, IDamageable, IEMoveable, ITriggerable
         CurrentHealth = MaxHealth;
 
         rb = GetComponent<Rigidbody2D>();
+
+        EnemyIdleBaseInstance.Initialize(gameObject, this);
+        EnemyChaseBaseInstance.Initialize(gameObject, this);
+        EnemyAttackBaseInstance.Initialize(gameObject, this);
 
         StateMachine.Initialize(IdleState);
     }

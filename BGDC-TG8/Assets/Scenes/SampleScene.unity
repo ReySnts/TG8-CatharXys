@@ -3461,6 +3461,7 @@ GameObject:
   - component: {fileID: 1003491013}
   - component: {fileID: 1003491012}
   - component: {fileID: 1003491011}
+  - component: {fileID: 1003491015}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -3564,13 +3565,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003491010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.93524, y: 3.225244, z: 0}
+  m_LocalPosition: {x: 12.4, y: 3.225244, z: 0}
   m_LocalScale: {x: 2.6352, y: 2.6352, z: 2.6352}
   m_Children:
   - {fileID: 1099428973}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1003491015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003491010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4627a89035825aa438555195fdb74f4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MaxHealth>k__BackingField: 100
+  EnemyIdleBase: {fileID: 11400000, guid: c6ef9ce6fa52713428b0c09e6507afd6, type: 2}
+  EnemyAttackBase: {fileID: 11400000, guid: 38115f18d86fb2d42bbbe763f24359a4, type: 2}
+  EnemyChaseBase: {fileID: 11400000, guid: 45a81082545d72d418caaf095ba62c4b, type: 2}
 --- !u!1 &1099428972
 GameObject:
   m_ObjectHideFlags: 0
@@ -4004,6 +4021,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1237563173}
   - component: {fileID: 1237563174}
+  - component: {fileID: 1237563175}
   m_Layer: 0
   m_Name: AttackRange
   m_TagString: Untagged
@@ -4040,7 +4058,19 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.2
+  m_Radius: 2
+--- !u!114 &1237563175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237563172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b79953c7411f7904fa551ccab295f1fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1307153058
 GameObject:
   m_ObjectHideFlags: 0
@@ -19926,6 +19956,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2095446100}
   - component: {fileID: 2095446101}
+  - component: {fileID: 2095446102}
   m_Layer: 0
   m_Name: AggroRange
   m_TagString: Untagged
@@ -19962,7 +19993,19 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 5
+  m_Radius: 2.5
+--- !u!114 &2095446102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095446099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 545608411abc65043bc073bd21d45523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4473424018398598748
 PrefabInstance:
   m_ObjectHideFlags: 0
