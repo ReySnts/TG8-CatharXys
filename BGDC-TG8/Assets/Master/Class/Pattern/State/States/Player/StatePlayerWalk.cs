@@ -1,12 +1,16 @@
 using UnityEngine;
 
-[RequireComponent(requiredComponent: typeof(AbstractAnimationPlayer))]
+[RequireComponent(requiredComponent: typeof(AbstractAnimationPlayer), requiredComponent2: typeof(AbstractAudioClip))]
 
 public sealed class StatePlayerWalk : AbstractStatePlayer
 {
     [SerializeField] private AbstractState idle;
 
-    public override void Enter() => contextAnimationPlayer.SetStrategy(strategy: GetComponent<AnimationPlayerWalk>());
+    public override void Enter()
+    {
+        contextAnimationPlayer.SetStrategy(strategy: GetComponent<AnimationPlayerWalk>());
+        contextSoundPlayer.SetStrategy(strategy: GetComponent<AbstractAudioClip>());
+    }
 
     public override void DoUpdate()
     {

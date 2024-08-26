@@ -6,7 +6,11 @@ public sealed class StatePlayerIdle : AbstractStatePlayer
 {
     [SerializeField] private AbstractState walk;
 
-    public override void Enter() => contextAnimationPlayer.SetStrategy(strategy: GetComponent<AnimationPlayerIdle>());
+    public override void Enter()
+    {
+        contextAnimationPlayer.SetStrategy(strategy: GetComponent<AnimationPlayerIdle>());
+        contextSoundPlayer.SetStrategy(strategy: null);
+    }
 
     public override void DoUpdate()
     {

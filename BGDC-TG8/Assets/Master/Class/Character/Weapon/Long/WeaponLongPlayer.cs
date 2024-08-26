@@ -4,11 +4,14 @@ public sealed class WeaponLongPlayer : AbstractWeaponLong
 {
     private AbstractScenePlayable playableScene;
 
+    private AudioSource audioSource;
+
     private float cooldown;
 
     protected override void Awake()
     {
         base.Awake();
+        audioSource = GetComponentInChildren<AudioSource>();
         playableScene = GetComponentInParent<AbstractScenePlayable>();
     }
 
@@ -18,8 +21,9 @@ public sealed class WeaponLongPlayer : AbstractWeaponLong
     {
         if (playableScene.InputManager.MouseButtonDownLeft && Time.time > cooldown)
         {
-            cooldown = Time.time + fireRate;
+            audioSource.Play();
             bulletFactory.GetProduct(product: playableScene.MainCamera.MousePointerWorldPosition, parent: bulletFactory.transform);
+            cooldown = Time.time + fireRate;
         }
     }
 }
