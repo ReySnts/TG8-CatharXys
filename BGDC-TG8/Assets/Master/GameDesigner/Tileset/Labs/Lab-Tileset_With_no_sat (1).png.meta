@@ -3,7 +3,7 @@ guid: 214dd939d0bdbd147a0888c3903a96d5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 13
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,12 +20,10 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -64,8 +62,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  swizzle: 50462976
-  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -77,7 +73,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -90,7 +85,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -627,28 +621,12 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
-    nameFileIdTable:
-      Lab-Tileset_With_no_sat (1)_0: 990929359
-      Lab-Tileset_With_no_sat (1)_1: 1162300580
-      Lab-Tileset_With_no_sat (1)_10: -1282840528
-      Lab-Tileset_With_no_sat (1)_11: 398702525
-      Lab-Tileset_With_no_sat (1)_12: -894167978
-      Lab-Tileset_With_no_sat (1)_13: 430833057
-      Lab-Tileset_With_no_sat (1)_14: 48274299
-      Lab-Tileset_With_no_sat (1)_15: 154705973
-      Lab-Tileset_With_no_sat (1)_16: -1584480248
-      Lab-Tileset_With_no_sat (1)_17: -1104094110
-      Lab-Tileset_With_no_sat (1)_2: -693436985
-      Lab-Tileset_With_no_sat (1)_3: -828462807
-      Lab-Tileset_With_no_sat (1)_4: 864448884
-      Lab-Tileset_With_no_sat (1)_5: 530328987
-      Lab-Tileset_With_no_sat (1)_6: -1863287817
-      Lab-Tileset_With_no_sat (1)_7: 2070064726
-      Lab-Tileset_With_no_sat (1)_8: 1950955293
-      Lab-Tileset_With_no_sat (1)_9: 937571916
-  mipmapLimitGroupName: 
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: c687a454df874d34c9b61a23723abd77, type: 3}
+      name: _NormalMap
+  spritePackingTag: 
   pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
