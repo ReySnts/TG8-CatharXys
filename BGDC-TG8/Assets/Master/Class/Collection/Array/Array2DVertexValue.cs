@@ -1,1 +1,1 @@
-public sealed class Array2DVertexValue : AbstractArray2D<int> { }
+public sealed class Array2DVertexValue : AbstractArray2D<NodePath> { }

@@ -5,7 +5,7 @@ public abstract class AbstractList<T> : MonoBehaviour
 {
     protected List<T> list = new List<T>();
 
-    public List<T> List => list;
+    public List<T> List { get => list; set => list = value; }
 
     protected abstract void Awake();
 
