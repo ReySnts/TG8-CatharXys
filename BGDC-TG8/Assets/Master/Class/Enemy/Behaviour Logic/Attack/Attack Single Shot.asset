@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa4d5c30717ec0645bf0bb8feaed7734, type: 3}
   m_Name: Attack Single Shot
   m_EditorClassIdentifier: 
-  BulletPrefab: {fileID: 4657110086750046817, guid: 0bfb5d73e66365f48a934011b07bb0c1, type: 3}
+  BulletPrefab: {fileID: 936106804795898276, guid: 6de896afaf44f354bbbe7be54b0e66ec, type: 3}
   bulletSpeed: 10
   shootCD: 2
   timeTillExit: 3

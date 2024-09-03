@@ -81,7 +81,7 @@ public class Enemy : MonoBehaviour, IDamageable, IEMoveable, ITriggerable
 
     public void Die()
     {
-
+        Destroy(gameObject);
     }
     #endregion
 

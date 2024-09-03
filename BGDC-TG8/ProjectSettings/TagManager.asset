@@ -7,6 +7,8 @@ TagManager:
   - UI
   - Heal
   - Damage
+  - TriggerRad
+  - Enemy
   layers:
   - Default
   - TransparentFX
