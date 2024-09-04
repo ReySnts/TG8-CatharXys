@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BulletDestroyer : MonoBehaviour
@@ -6,7 +8,7 @@ public class BulletDestroyer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.gameObject.CompareTag(GameObjectTag.PLAYER))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(obj: Instantiate(original: basicBulletHit, position: transform.position, rotation: Quaternion.identity), t: 1f);
             Destroy(gameObject);
