@@ -2444,6 +2444,35 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &704367109 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5934723649830343211, guid: 2d0ee354075cc2842bfb5a5a16aa66ba, type: 3}
+  m_PrefabInstance: {fileID: 956707505}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &704367113 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3711685903327248886, guid: 2d0ee354075cc2842bfb5a5a16aa66ba, type: 3}
+  m_PrefabInstance: {fileID: 956707505}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &704367114
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704367109}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 024c09ce689c9224d97a07a884c69f8d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &707871996
 GameObject:
   m_ObjectHideFlags: 0
@@ -3183,6 +3212,63 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1001 &956707505
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1351999327}
+    m_Modifications:
+    - target: {fileID: 3711685903327248886, guid: 2d0ee354075cc2842bfb5a5a16aa66ba, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711685903327248886, guid: 2d0ee354075cc2842bfb5a5a16aa66ba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.3136806
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711685903327248886, guid: 2d0ee354075cc2842bfb5a5a16aa66ba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.7562337
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711685903327248886, guid: 2d0ee354075cc2842bfb5a5a16aa66ba, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711685903327248886, guid: 2d0ee354075cc2842bfb5a5a16aa66ba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711685903327248886, guid: 2d0ee354075cc2842bfb5a5a16aa66ba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711685903327248886, guid: 2d0ee354075cc2842bfb5a5a16aa66ba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711685903327248886, guid: 2d0ee354075cc2842bfb5a5a16aa66ba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711685903327248886, guid: 2d0ee354075cc2842bfb5a5a16aa66ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711685903327248886, guid: 2d0ee354075cc2842bfb5a5a16aa66ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711685903327248886, guid: 2d0ee354075cc2842bfb5a5a16aa66ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934723649830343211, guid: 2d0ee354075cc2842bfb5a5a16aa66ba, type: 3}
+      propertyPath: m_Name
+      value: Vortex
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2d0ee354075cc2842bfb5a5a16aa66ba, type: 3}
 --- !u!1 &973650836
 GameObject:
   m_ObjectHideFlags: 0
@@ -3813,6 +3899,7 @@ Transform:
   - {fileID: 372008527}
   - {fileID: 681019199}
   - {fileID: 907956978}
+  - {fileID: 704367113}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
