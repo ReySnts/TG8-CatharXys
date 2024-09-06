@@ -36,7 +36,15 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _SampleTexture2D_3de535f491824fd48d0361de5de6576b_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 29449592bcceea748ae1861cd04607e0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_f09a08be896d4b26aa3c6929b2ad7c01_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: cbde8a91b07302f458c0b7cc93b8a64e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _QueueControl: 0
