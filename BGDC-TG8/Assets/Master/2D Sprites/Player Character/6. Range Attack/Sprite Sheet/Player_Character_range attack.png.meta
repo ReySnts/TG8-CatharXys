@@ -78,7 +78,7 @@ TextureImporter:
       213: 5855625011083685370
     second: Player_Character_range attack_24
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -95,10 +95,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -137,6 +139,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -148,6 +152,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -160,6 +165,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -172,6 +178,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -712,9 +719,34 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Player_Character_range attack_0: -4856238303829511137
+      Player_Character_range attack_1: 281367350018939077
+      Player_Character_range attack_10: 642766655805702841
+      Player_Character_range attack_11: -4398586613366844130
+      Player_Character_range attack_12: -3112935509451666362
+      Player_Character_range attack_13: -5326932763583240421
+      Player_Character_range attack_14: 2524377465597280306
+      Player_Character_range attack_15: 5924197259300612383
+      Player_Character_range attack_16: 4108185947420660703
+      Player_Character_range attack_17: -2361858472910499210
+      Player_Character_range attack_18: -1595457327491533933
+      Player_Character_range attack_19: -415931622775907869
+      Player_Character_range attack_2: -5043820245439186407
+      Player_Character_range attack_20: 5969939524517282196
+      Player_Character_range attack_21: -563450728059681265
+      Player_Character_range attack_22: -880793134506014295
+      Player_Character_range attack_23: -5764659111790498292
+      Player_Character_range attack_24: 5855625011083685370
+      Player_Character_range attack_3: 4336321842720167634
+      Player_Character_range attack_4: 863005218523016007
+      Player_Character_range attack_5: -7816123557708719134
+      Player_Character_range attack_6: -2625744314561104120
+      Player_Character_range attack_7: -9147817143409800109
+      Player_Character_range attack_8: -1374890748429998585
+      Player_Character_range attack_9: 7811219779685803986
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

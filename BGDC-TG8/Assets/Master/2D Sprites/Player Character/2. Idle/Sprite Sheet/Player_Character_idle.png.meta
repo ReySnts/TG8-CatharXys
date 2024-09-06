@@ -78,7 +78,7 @@ TextureImporter:
       213: 171434769194792075
     second: Player_Character_idle_24
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -95,10 +95,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -137,6 +139,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -148,6 +152,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -160,6 +165,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -172,6 +178,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -712,9 +719,34 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Player_Character_idle_0: -3279631448189293453
+      Player_Character_idle_1: -699885856503419522
+      Player_Character_idle_10: 3782522219581127616
+      Player_Character_idle_11: -3219327425919847930
+      Player_Character_idle_12: -8703987223764089139
+      Player_Character_idle_13: 2529734921738792181
+      Player_Character_idle_14: 1450742211936052013
+      Player_Character_idle_15: -1290029516106694999
+      Player_Character_idle_16: -2932450696667968499
+      Player_Character_idle_17: -6929689459058120230
+      Player_Character_idle_18: -8015512407091525818
+      Player_Character_idle_19: 8721451049404365472
+      Player_Character_idle_2: 3979436338167807091
+      Player_Character_idle_20: 7541800275702485525
+      Player_Character_idle_21: -4352404654677516431
+      Player_Character_idle_22: -4338865635790797476
+      Player_Character_idle_23: -1153338398489401840
+      Player_Character_idle_24: 171434769194792075
+      Player_Character_idle_3: -1896894405249535829
+      Player_Character_idle_4: -1007177703883770237
+      Player_Character_idle_5: -4841589045811319933
+      Player_Character_idle_6: 2084257747372172092
+      Player_Character_idle_7: 6700166601909856970
+      Player_Character_idle_8: 1232472581971961851
+      Player_Character_idle_9: 4214320509578993171
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

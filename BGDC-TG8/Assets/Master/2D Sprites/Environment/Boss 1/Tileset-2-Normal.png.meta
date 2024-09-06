@@ -216,7 +216,7 @@ TextureImporter:
       213: 2069066972920288082
     second: Tileset-2-Normal_70
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -233,10 +233,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -275,6 +277,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -286,6 +290,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -298,6 +303,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -310,6 +316,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1816,9 +1823,80 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Tileset-2-Normal_0: 1511852846840302563
+      Tileset-2-Normal_1: -6745549364262367012
+      Tileset-2-Normal_10: 3080100656162024480
+      Tileset-2-Normal_11: -470065217330772724
+      Tileset-2-Normal_12: -7686223325343572542
+      Tileset-2-Normal_13: -6419615448732518238
+      Tileset-2-Normal_14: 2139544105598245740
+      Tileset-2-Normal_15: 7898765304193325960
+      Tileset-2-Normal_16: 355171269737222774
+      Tileset-2-Normal_17: -1947475681486594560
+      Tileset-2-Normal_18: -3254575024197177786
+      Tileset-2-Normal_19: -4608974202845312269
+      Tileset-2-Normal_2: 141705503805735852
+      Tileset-2-Normal_20: 1351782237997870404
+      Tileset-2-Normal_21: -7501694389023826195
+      Tileset-2-Normal_22: -3763639785507102726
+      Tileset-2-Normal_23: -8096818921210280777
+      Tileset-2-Normal_24: 5979825377433216185
+      Tileset-2-Normal_25: 8735581671259871892
+      Tileset-2-Normal_26: 233575633269210392
+      Tileset-2-Normal_27: 1231927855334266190
+      Tileset-2-Normal_28: -8260208919957626519
+      Tileset-2-Normal_29: 8307609628517501011
+      Tileset-2-Normal_3: -7181476619932256290
+      Tileset-2-Normal_30: -805616014867521320
+      Tileset-2-Normal_31: -7050516002607578883
+      Tileset-2-Normal_32: -2028355080900040803
+      Tileset-2-Normal_33: 985158833513886081
+      Tileset-2-Normal_34: -4936789304230212659
+      Tileset-2-Normal_35: 6443874951631846887
+      Tileset-2-Normal_36: -185512572866432808
+      Tileset-2-Normal_37: 7550104002487905775
+      Tileset-2-Normal_38: 3581596371610320535
+      Tileset-2-Normal_39: 5956501995163910050
+      Tileset-2-Normal_4: 800470716692714822
+      Tileset-2-Normal_40: 4917672233334903370
+      Tileset-2-Normal_41: -6948077469985739693
+      Tileset-2-Normal_42: 2311197870634772940
+      Tileset-2-Normal_43: 4211046324836980673
+      Tileset-2-Normal_44: -164350288296007295
+      Tileset-2-Normal_45: 1945565780615816564
+      Tileset-2-Normal_46: 2975237155802134608
+      Tileset-2-Normal_47: 2770012447625052080
+      Tileset-2-Normal_48: 4973035592817822526
+      Tileset-2-Normal_49: -3796419419504863687
+      Tileset-2-Normal_5: 2211144584632846281
+      Tileset-2-Normal_50: 4190357431958070054
+      Tileset-2-Normal_51: -5558194891513901503
+      Tileset-2-Normal_52: 3329130965584737907
+      Tileset-2-Normal_53: -8446099156520566630
+      Tileset-2-Normal_54: -6097045575021514920
+      Tileset-2-Normal_55: -4197389105553761389
+      Tileset-2-Normal_56: 8269641404483971242
+      Tileset-2-Normal_57: 8598712446228370808
+      Tileset-2-Normal_58: 1612148140781492449
+      Tileset-2-Normal_59: -5078346501066395027
+      Tileset-2-Normal_6: 4290024939461555016
+      Tileset-2-Normal_60: 66490857391804937
+      Tileset-2-Normal_61: -6023226393127183532
+      Tileset-2-Normal_62: 530835195114385075
+      Tileset-2-Normal_63: -8374580793689639027
+      Tileset-2-Normal_64: 6699527376587078678
+      Tileset-2-Normal_65: 2386773839206734753
+      Tileset-2-Normal_66: 8107402874171422758
+      Tileset-2-Normal_67: -5964994115880996629
+      Tileset-2-Normal_68: 830397282222928764
+      Tileset-2-Normal_69: -9095009588180704812
+      Tileset-2-Normal_7: 2121558414915367508
+      Tileset-2-Normal_70: 2069066972920288082
+      Tileset-2-Normal_8: 3301352646971432906
+      Tileset-2-Normal_9: 1160069765412593705
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

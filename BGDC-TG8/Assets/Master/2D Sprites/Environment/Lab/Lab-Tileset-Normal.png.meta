@@ -153,7 +153,7 @@ TextureImporter:
       213: -7481296093940648293
     second: Lab-Tileset-Normal_49
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -170,10 +170,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -212,6 +214,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -223,6 +227,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -235,6 +240,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -247,6 +253,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1312,9 +1319,59 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Lab-Tileset-Normal_0: 8808581369930719653
+      Lab-Tileset-Normal_1: -7347215263036556740
+      Lab-Tileset-Normal_10: 7992102544019131357
+      Lab-Tileset-Normal_11: -7224699413639842678
+      Lab-Tileset-Normal_12: -6073167610451158873
+      Lab-Tileset-Normal_13: -5899996273080959654
+      Lab-Tileset-Normal_14: 4729377657006131827
+      Lab-Tileset-Normal_15: 5275007679109423401
+      Lab-Tileset-Normal_16: 5623811130180921050
+      Lab-Tileset-Normal_17: 778639379677434950
+      Lab-Tileset-Normal_18: 3878279831949117463
+      Lab-Tileset-Normal_19: -2440998551852997401
+      Lab-Tileset-Normal_2: 6821606450675462157
+      Lab-Tileset-Normal_20: -2695992161062661368
+      Lab-Tileset-Normal_21: -8231415258140546613
+      Lab-Tileset-Normal_22: 367694243600116947
+      Lab-Tileset-Normal_23: 4162679389436385048
+      Lab-Tileset-Normal_24: 2441718627674696359
+      Lab-Tileset-Normal_25: -3989738511648054962
+      Lab-Tileset-Normal_26: 461508844097917950
+      Lab-Tileset-Normal_27: -1928115103984870988
+      Lab-Tileset-Normal_28: 8657842379700890637
+      Lab-Tileset-Normal_29: 1920544360158270237
+      Lab-Tileset-Normal_3: 4373332177741105997
+      Lab-Tileset-Normal_30: 104505657895396788
+      Lab-Tileset-Normal_31: -1782992079798305919
+      Lab-Tileset-Normal_32: -4132227526441532191
+      Lab-Tileset-Normal_33: -6606716873101052245
+      Lab-Tileset-Normal_34: -5001715596243317574
+      Lab-Tileset-Normal_35: -1899281025005550412
+      Lab-Tileset-Normal_36: 5507858544001893579
+      Lab-Tileset-Normal_37: -930752561263401695
+      Lab-Tileset-Normal_38: 7615027735025154699
+      Lab-Tileset-Normal_39: 3933408807244853019
+      Lab-Tileset-Normal_4: 6640563813957070082
+      Lab-Tileset-Normal_40: -7330030603190535041
+      Lab-Tileset-Normal_41: -6763959845408205016
+      Lab-Tileset-Normal_42: 8320861232096849143
+      Lab-Tileset-Normal_43: 5124934372213791768
+      Lab-Tileset-Normal_44: 9013744683540096955
+      Lab-Tileset-Normal_45: 5464227998873345579
+      Lab-Tileset-Normal_46: 8284972077034198945
+      Lab-Tileset-Normal_47: 1601927563410460674
+      Lab-Tileset-Normal_48: 2063252912728082502
+      Lab-Tileset-Normal_49: -7481296093940648293
+      Lab-Tileset-Normal_5: -3305291226816511235
+      Lab-Tileset-Normal_6: 3821510133018926666
+      Lab-Tileset-Normal_7: 6002486551769041384
+      Lab-Tileset-Normal_8: 7588158266493074020
+      Lab-Tileset-Normal_9: -1262739743885859976
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

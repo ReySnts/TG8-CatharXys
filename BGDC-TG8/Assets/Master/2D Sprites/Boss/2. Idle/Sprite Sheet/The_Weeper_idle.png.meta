@@ -153,7 +153,7 @@ TextureImporter:
       213: 51780770728668252
     second: The_Weeper_idle_49
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -170,10 +170,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -212,6 +214,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -223,6 +227,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -235,6 +240,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -247,6 +253,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1312,9 +1319,59 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      The_Weeper_idle_0: 6502161731038027906
+      The_Weeper_idle_1: -5996858608582519697
+      The_Weeper_idle_10: 2421486424913915647
+      The_Weeper_idle_11: -1381463817429133365
+      The_Weeper_idle_12: 4808833175037065887
+      The_Weeper_idle_13: 5335888038155024478
+      The_Weeper_idle_14: 2595988056045297802
+      The_Weeper_idle_15: -7307238294397212754
+      The_Weeper_idle_16: -3348060284664965276
+      The_Weeper_idle_17: -3964367616373608485
+      The_Weeper_idle_18: 1682093249227136899
+      The_Weeper_idle_19: 9013293447274401840
+      The_Weeper_idle_2: 9161300195123157079
+      The_Weeper_idle_20: 1441259860574169380
+      The_Weeper_idle_21: -4698099107536586734
+      The_Weeper_idle_22: -7548139503453813581
+      The_Weeper_idle_23: 600011986854533249
+      The_Weeper_idle_24: -7143642221383096046
+      The_Weeper_idle_25: 5674307246969148381
+      The_Weeper_idle_26: -6941576523556520476
+      The_Weeper_idle_27: -4122610338649388933
+      The_Weeper_idle_28: -8421264348794089013
+      The_Weeper_idle_29: 1315837615167652960
+      The_Weeper_idle_3: -916233047668214949
+      The_Weeper_idle_30: -177597242247455628
+      The_Weeper_idle_31: 4905737929676621361
+      The_Weeper_idle_32: -3438809717549390387
+      The_Weeper_idle_33: 2799877338029495223
+      The_Weeper_idle_34: -1239500377332860703
+      The_Weeper_idle_35: 9208172953911679707
+      The_Weeper_idle_36: 3621090165374513901
+      The_Weeper_idle_37: 3786573799802310020
+      The_Weeper_idle_38: -6116223763952601318
+      The_Weeper_idle_39: 6300985496253367938
+      The_Weeper_idle_4: 6612689659346278892
+      The_Weeper_idle_40: -5208949266829759147
+      The_Weeper_idle_41: -5384531847895899088
+      The_Weeper_idle_42: 4406160685360160259
+      The_Weeper_idle_43: 2243189380447086588
+      The_Weeper_idle_44: 8213303665381662899
+      The_Weeper_idle_45: 675185327082566265
+      The_Weeper_idle_46: -3360437237104723181
+      The_Weeper_idle_47: -5935229690384826714
+      The_Weeper_idle_48: -9138154029974193460
+      The_Weeper_idle_49: 51780770728668252
+      The_Weeper_idle_5: -8576099823775259072
+      The_Weeper_idle_6: 5556248952576996514
+      The_Weeper_idle_7: -8305848002983769644
+      The_Weeper_idle_8: 6076293464431965371
+      The_Weeper_idle_9: -4644388213898886463
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

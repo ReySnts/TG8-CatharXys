@@ -153,7 +153,7 @@ TextureImporter:
       213: -593920465393737095
     second: The_Weeper_walk cycle_49
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -170,10 +170,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -212,6 +214,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -223,6 +227,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -235,6 +240,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -247,6 +253,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1312,9 +1319,59 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      The_Weeper_walk cycle_0: 7923965530598317561
+      The_Weeper_walk cycle_1: -7013811989647533565
+      The_Weeper_walk cycle_10: -7399533129437310365
+      The_Weeper_walk cycle_11: 7672467479451500284
+      The_Weeper_walk cycle_12: -4357045764539880888
+      The_Weeper_walk cycle_13: -5044057387902723440
+      The_Weeper_walk cycle_14: 6975618920743931854
+      The_Weeper_walk cycle_15: -4420935938420205405
+      The_Weeper_walk cycle_16: 1070631274206554121
+      The_Weeper_walk cycle_17: -3933267654537988871
+      The_Weeper_walk cycle_18: -8813844986446499881
+      The_Weeper_walk cycle_19: -533514550804036231
+      The_Weeper_walk cycle_2: 6957260658418015329
+      The_Weeper_walk cycle_20: -43002565327004013
+      The_Weeper_walk cycle_21: 8802736296231499610
+      The_Weeper_walk cycle_22: 2321039063938363831
+      The_Weeper_walk cycle_23: 279165030487450829
+      The_Weeper_walk cycle_24: 8227980326656003679
+      The_Weeper_walk cycle_25: 5507924100809882522
+      The_Weeper_walk cycle_26: 2177353754743384763
+      The_Weeper_walk cycle_27: -5948594846778201816
+      The_Weeper_walk cycle_28: 5995080963022554893
+      The_Weeper_walk cycle_29: -5130716069085933759
+      The_Weeper_walk cycle_3: 2078308343210230942
+      The_Weeper_walk cycle_30: -7592708947176922130
+      The_Weeper_walk cycle_31: 408338723547079652
+      The_Weeper_walk cycle_32: 5580279997365834515
+      The_Weeper_walk cycle_33: 1305495375148109204
+      The_Weeper_walk cycle_34: -5086452551725101147
+      The_Weeper_walk cycle_35: 3400924887807626843
+      The_Weeper_walk cycle_36: -4408164030297345356
+      The_Weeper_walk cycle_37: 8231924041179532047
+      The_Weeper_walk cycle_38: 7014071772367718114
+      The_Weeper_walk cycle_39: 6949715481407564636
+      The_Weeper_walk cycle_4: -3780526771606183204
+      The_Weeper_walk cycle_40: -6598191652668623065
+      The_Weeper_walk cycle_41: -7601612455460260896
+      The_Weeper_walk cycle_42: 3522181168539205816
+      The_Weeper_walk cycle_43: -8461380536798664028
+      The_Weeper_walk cycle_44: 8243621210152169821
+      The_Weeper_walk cycle_45: -2723827183666255621
+      The_Weeper_walk cycle_46: 2674305242103457767
+      The_Weeper_walk cycle_47: -7026722402264286046
+      The_Weeper_walk cycle_48: 7009902285171928941
+      The_Weeper_walk cycle_49: -593920465393737095
+      The_Weeper_walk cycle_5: 1612366043052680215
+      The_Weeper_walk cycle_6: -4167421748805679215
+      The_Weeper_walk cycle_7: 6422779090884096662
+      The_Weeper_walk cycle_8: -3516260894884035210
+      The_Weeper_walk cycle_9: 4914729273817726195
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

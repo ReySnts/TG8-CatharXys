@@ -123,7 +123,7 @@ TextureImporter:
       213: -3441188768035513972
     second: Ninja_8Direction_39
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -140,10 +140,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -182,6 +184,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -193,6 +197,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -205,6 +210,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1060,9 +1079,49 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Ninja_8Direction_0: 615963255499094580
+      Ninja_8Direction_1: -5448617616938339826
+      Ninja_8Direction_10: 541505887437041809
+      Ninja_8Direction_11: 8595237662032079108
+      Ninja_8Direction_12: -4205843909963315697
+      Ninja_8Direction_13: 9115701853154371396
+      Ninja_8Direction_14: 530636902424537268
+      Ninja_8Direction_15: 4530201135794690465
+      Ninja_8Direction_16: -3188831777358507854
+      Ninja_8Direction_17: 4094871486483021204
+      Ninja_8Direction_18: -1227037584851437011
+      Ninja_8Direction_19: -1320977429450070586
+      Ninja_8Direction_2: -5253612672431516202
+      Ninja_8Direction_20: 3906943694055865900
+      Ninja_8Direction_21: -8591786120670965947
+      Ninja_8Direction_22: 6880975371736022231
+      Ninja_8Direction_23: 1990851998122837983
+      Ninja_8Direction_24: 252817856400603125
+      Ninja_8Direction_25: -839525399626198135
+      Ninja_8Direction_26: 7784255983628898052
+      Ninja_8Direction_27: 5912984028077196569
+      Ninja_8Direction_28: -7990753747882269712
+      Ninja_8Direction_29: -7397450775079346991
+      Ninja_8Direction_3: -4095518294516025221
+      Ninja_8Direction_30: -7307646082902635247
+      Ninja_8Direction_31: 8701844993497444404
+      Ninja_8Direction_32: 1526746980284390063
+      Ninja_8Direction_33: -2668857914826440468
+      Ninja_8Direction_34: 3596109646799345483
+      Ninja_8Direction_35: -6592842088420178815
+      Ninja_8Direction_36: 8530226274614657276
+      Ninja_8Direction_37: -9051400909186669971
+      Ninja_8Direction_38: -8892298554377046106
+      Ninja_8Direction_39: -3441188768035513972
+      Ninja_8Direction_4: -1664553825531649687
+      Ninja_8Direction_5: 7067451377065218359
+      Ninja_8Direction_6: -432680901080157017
+      Ninja_8Direction_7: 7263233666994999053
+      Ninja_8Direction_8: 6677737523094077583
+      Ninja_8Direction_9: 6126621845808989640
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

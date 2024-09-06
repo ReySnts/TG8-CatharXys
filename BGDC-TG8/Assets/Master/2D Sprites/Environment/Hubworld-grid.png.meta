@@ -78,7 +78,7 @@ TextureImporter:
       213: 8255324839264843228
     second: Hubworld-grid_24
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -95,10 +95,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -137,6 +139,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -148,6 +152,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -160,6 +165,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -172,6 +178,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -712,9 +719,34 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Hubworld-grid_0: 1331611947588959272
+      Hubworld-grid_1: -6796624688457129593
+      Hubworld-grid_10: -7009118790557018763
+      Hubworld-grid_11: 8188310937469005601
+      Hubworld-grid_12: 4863778207768858571
+      Hubworld-grid_13: 2293903135258155979
+      Hubworld-grid_14: -6318754494199167312
+      Hubworld-grid_15: -1185035985107491989
+      Hubworld-grid_16: 3650516362929695780
+      Hubworld-grid_17: -8219643766534943105
+      Hubworld-grid_18: -8965838858533148191
+      Hubworld-grid_19: 6967196982858697562
+      Hubworld-grid_2: 1604296403456066157
+      Hubworld-grid_20: 7337945357131785101
+      Hubworld-grid_21: -888484621173936471
+      Hubworld-grid_22: 7149092008736727966
+      Hubworld-grid_23: 5229960491434481411
+      Hubworld-grid_24: 8255324839264843228
+      Hubworld-grid_3: -8736488905377912847
+      Hubworld-grid_4: -6890298400937610384
+      Hubworld-grid_5: 7658930588615899263
+      Hubworld-grid_6: -7600836216402184985
+      Hubworld-grid_7: -304159742358855149
+      Hubworld-grid_8: -8927562001313247076
+      Hubworld-grid_9: -3645977907805884427
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

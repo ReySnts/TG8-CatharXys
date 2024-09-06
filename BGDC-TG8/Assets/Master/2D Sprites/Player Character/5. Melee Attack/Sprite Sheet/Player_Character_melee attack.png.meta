@@ -228,7 +228,7 @@ TextureImporter:
       213: -3695783230249158949
     second: Player_Character_melee attack_74
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -245,10 +245,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -287,6 +289,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -298,6 +302,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -310,6 +315,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -322,6 +328,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1912,9 +1919,84 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Player_Character_melee attack_0: -4007725713546522741
+      Player_Character_melee attack_1: -4041807082845972126
+      Player_Character_melee attack_10: -2532363884766618894
+      Player_Character_melee attack_11: -1416324385786072093
+      Player_Character_melee attack_12: 7518340705629062188
+      Player_Character_melee attack_13: 8124038572830132221
+      Player_Character_melee attack_14: -8182779615294976479
+      Player_Character_melee attack_15: -2774138996254402168
+      Player_Character_melee attack_16: 4649891339092211269
+      Player_Character_melee attack_17: -1300264219114014265
+      Player_Character_melee attack_18: -2102011064042764754
+      Player_Character_melee attack_19: -6971826628345767610
+      Player_Character_melee attack_2: -3645956350515660226
+      Player_Character_melee attack_20: 4553783067478399670
+      Player_Character_melee attack_21: -7689409630999951022
+      Player_Character_melee attack_22: 7857161097310850040
+      Player_Character_melee attack_23: -2235244140633980474
+      Player_Character_melee attack_24: 6000546081827125093
+      Player_Character_melee attack_25: 8297803514158806121
+      Player_Character_melee attack_26: 819564394158859348
+      Player_Character_melee attack_27: -5357262467529272381
+      Player_Character_melee attack_28: -7603332604738007535
+      Player_Character_melee attack_29: -3740699959635062069
+      Player_Character_melee attack_3: 1014736700457046258
+      Player_Character_melee attack_30: -88274957566101163
+      Player_Character_melee attack_31: -4993087255782721675
+      Player_Character_melee attack_32: -5468296076940158595
+      Player_Character_melee attack_33: 718588028868587525
+      Player_Character_melee attack_34: -6304357595410553108
+      Player_Character_melee attack_35: -1501912628391385182
+      Player_Character_melee attack_36: 4960106328515974244
+      Player_Character_melee attack_37: -426241938006965693
+      Player_Character_melee attack_38: -4588320355943057468
+      Player_Character_melee attack_39: 2080491177486634564
+      Player_Character_melee attack_4: -1114268371160736408
+      Player_Character_melee attack_40: -7265967046469571031
+      Player_Character_melee attack_41: 2561621186656342680
+      Player_Character_melee attack_42: 7064072664192754381
+      Player_Character_melee attack_43: -752275407728230451
+      Player_Character_melee attack_44: 116936929213046584
+      Player_Character_melee attack_45: 4256184164535573926
+      Player_Character_melee attack_46: -4138435680519432452
+      Player_Character_melee attack_47: 2203544186945269660
+      Player_Character_melee attack_48: -3859795606472065181
+      Player_Character_melee attack_49: 2721361380590245625
+      Player_Character_melee attack_5: 3325810330051596652
+      Player_Character_melee attack_50: -1949926766005960631
+      Player_Character_melee attack_51: -3391735483956177878
+      Player_Character_melee attack_52: 7151671840791467806
+      Player_Character_melee attack_53: -4931987507558060476
+      Player_Character_melee attack_54: -5666623474728006290
+      Player_Character_melee attack_55: 5392134093733661017
+      Player_Character_melee attack_56: -2993226497793918071
+      Player_Character_melee attack_57: 2194824637276104233
+      Player_Character_melee attack_58: -7898952167598073552
+      Player_Character_melee attack_59: -7897693842461123968
+      Player_Character_melee attack_6: -6984332397594812543
+      Player_Character_melee attack_60: -5841543868491598401
+      Player_Character_melee attack_61: -6102237238011093609
+      Player_Character_melee attack_62: -5874260502233435847
+      Player_Character_melee attack_63: 3170296053486855266
+      Player_Character_melee attack_64: 5287363755741237443
+      Player_Character_melee attack_65: -6533080227995528814
+      Player_Character_melee attack_66: -4592118592940957833
+      Player_Character_melee attack_67: 5891789194352995559
+      Player_Character_melee attack_68: 4870311968493978417
+      Player_Character_melee attack_69: 4282087993509255598
+      Player_Character_melee attack_7: 7282885959404580214
+      Player_Character_melee attack_70: -3382519411763918041
+      Player_Character_melee attack_71: 8216710102375362391
+      Player_Character_melee attack_72: 7636626424764406678
+      Player_Character_melee attack_73: -5405294476634244196
+      Player_Character_melee attack_74: -3695783230249158949
+      Player_Character_melee attack_8: -8895092862356320484
+      Player_Character_melee attack_9: 847548736453840409
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

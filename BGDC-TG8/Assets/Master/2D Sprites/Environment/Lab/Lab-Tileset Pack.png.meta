@@ -150,7 +150,7 @@ TextureImporter:
       213: -268298690172782581
     second: Lab-Tileset Pack_48
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -167,10 +167,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -209,6 +211,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -220,6 +224,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -232,6 +237,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -244,6 +250,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1288,9 +1295,58 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Lab-Tileset Pack_0: 3105051675982693328
+      Lab-Tileset Pack_1: 5251392745377178497
+      Lab-Tileset Pack_10: 5017893226048042694
+      Lab-Tileset Pack_11: 8847152159814301806
+      Lab-Tileset Pack_12: -4827556011250871311
+      Lab-Tileset Pack_13: 7898751491139535876
+      Lab-Tileset Pack_14: -1793985524130932327
+      Lab-Tileset Pack_15: -7046989365530034107
+      Lab-Tileset Pack_16: -1261292808554059467
+      Lab-Tileset Pack_17: 1796558005736165889
+      Lab-Tileset Pack_18: -7765777152415691953
+      Lab-Tileset Pack_19: -5991457055022600165
+      Lab-Tileset Pack_2: 3412810825041543785
+      Lab-Tileset Pack_20: 8075847160550422813
+      Lab-Tileset Pack_21: 680803596598724115
+      Lab-Tileset Pack_22: -7022509315654968257
+      Lab-Tileset Pack_23: -8001785979764139638
+      Lab-Tileset Pack_24: 2852572063576149317
+      Lab-Tileset Pack_25: 2764287756699895923
+      Lab-Tileset Pack_26: -1733948348803129866
+      Lab-Tileset Pack_27: 8086530089836557380
+      Lab-Tileset Pack_28: 8264152016829997901
+      Lab-Tileset Pack_29: -7469465189657930827
+      Lab-Tileset Pack_3: 1865268314535827537
+      Lab-Tileset Pack_30: -4819629136967378397
+      Lab-Tileset Pack_31: -4717474710061758307
+      Lab-Tileset Pack_32: -7303097943130531813
+      Lab-Tileset Pack_33: 2377426159519572757
+      Lab-Tileset Pack_34: -6681494270206924506
+      Lab-Tileset Pack_35: -764366859319095092
+      Lab-Tileset Pack_36: 2297132770650188311
+      Lab-Tileset Pack_37: 5113513024846390671
+      Lab-Tileset Pack_38: -1887083368768007928
+      Lab-Tileset Pack_39: -4639069249020765461
+      Lab-Tileset Pack_4: -3651746207043282935
+      Lab-Tileset Pack_40: -8566203652117591370
+      Lab-Tileset Pack_41: 7250604610065452997
+      Lab-Tileset Pack_42: 4033570554886513317
+      Lab-Tileset Pack_43: -5620853496651540765
+      Lab-Tileset Pack_44: 7502694704299838257
+      Lab-Tileset Pack_45: 3570706703061579957
+      Lab-Tileset Pack_46: 3783820289061365287
+      Lab-Tileset Pack_47: -6095085853060235397
+      Lab-Tileset Pack_48: -268298690172782581
+      Lab-Tileset Pack_5: 214847465935544190
+      Lab-Tileset Pack_6: -5022997848235824567
+      Lab-Tileset Pack_7: -6195103615833943497
+      Lab-Tileset Pack_8: -8672064336315919505
+      Lab-Tileset Pack_9: -4677601870494146599
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

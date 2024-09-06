@@ -93,7 +93,7 @@ TextureImporter:
       213: 5440956227647051560
     second: Player_Character_walk cycle_29
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -110,10 +110,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -152,6 +154,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -163,6 +167,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -175,6 +180,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -187,6 +193,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -832,9 +839,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Player_Character_walk cycle_0: -4217266917377831344
+      Player_Character_walk cycle_1: 6023536857808658654
+      Player_Character_walk cycle_10: 142121924759393944
+      Player_Character_walk cycle_11: -904206798598270490
+      Player_Character_walk cycle_12: 7698956433586527589
+      Player_Character_walk cycle_13: 1604732525283514641
+      Player_Character_walk cycle_14: 1664153928539411558
+      Player_Character_walk cycle_15: -5500788285867353615
+      Player_Character_walk cycle_16: -4545798805051109993
+      Player_Character_walk cycle_17: 4743171953296534392
+      Player_Character_walk cycle_18: -3657215567764239119
+      Player_Character_walk cycle_19: 6878246044848033642
+      Player_Character_walk cycle_2: 6270034060223881563
+      Player_Character_walk cycle_20: -516003670183475944
+      Player_Character_walk cycle_21: 7936654641358465012
+      Player_Character_walk cycle_22: 7119485582489227713
+      Player_Character_walk cycle_23: -1167220637504610132
+      Player_Character_walk cycle_24: 5134591369238245783
+      Player_Character_walk cycle_25: -7708854395392444802
+      Player_Character_walk cycle_26: 9098000228980759806
+      Player_Character_walk cycle_27: 9110497068073256210
+      Player_Character_walk cycle_28: -7344790305576602218
+      Player_Character_walk cycle_29: 5440956227647051560
+      Player_Character_walk cycle_3: -1532168923410529573
+      Player_Character_walk cycle_4: 738253659134262332
+      Player_Character_walk cycle_5: 2215549180533073943
+      Player_Character_walk cycle_6: 6293070926691465291
+      Player_Character_walk cycle_7: -6968619574520989506
+      Player_Character_walk cycle_8: -7345763795401720658
+      Player_Character_walk cycle_9: -3355805353683969221
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
