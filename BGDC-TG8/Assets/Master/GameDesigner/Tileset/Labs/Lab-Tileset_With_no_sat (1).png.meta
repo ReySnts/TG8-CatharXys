@@ -3,7 +3,7 @@ guid: 214dd939d0bdbd147a0888c3903a96d5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -42,7 +44,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -62,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -73,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -85,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -99,7 +105,7 @@ TextureImporter:
         width: 64
         height: 54
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.68}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -114,7 +120,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 197bed9cbfb863a4e99ee8e3f75ae969
-      internalID: 990929359
+      internalID: 8139825113134634090
       vertices: []
       indices: 
       edges: []
@@ -128,7 +134,7 @@ TextureImporter:
         width: 64
         height: 54
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.68}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -143,7 +149,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7f9243211ae77ce4494fdd0ca108aca0
-      internalID: 1162300580
+      internalID: -1404107287201952450
       vertices: []
       indices: 
       edges: []
@@ -172,7 +178,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1e1c55887a3cf3d4c95b07db10306e78
-      internalID: -693436985
+      internalID: -8655378200344606228
       vertices: []
       indices: 
       edges: []
@@ -201,7 +207,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 818ef38260641fd43abd953b86bbe253
-      internalID: -828462807
+      internalID: 635880527090797116
       vertices: []
       indices: 
       edges: []
@@ -215,7 +221,7 @@ TextureImporter:
         width: 192
         height: 191
       alignment: 9
-      pivot: {x: 0.4, y: 0.5}
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -230,7 +236,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1cbaa9c633b153b46a6c1b444b6f3194
-      internalID: 864448884
+      internalID: 4885984899622146553
       vertices: []
       indices: 
       edges: []
@@ -244,7 +250,7 @@ TextureImporter:
         width: 64
         height: 54
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.68}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -259,7 +265,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ed250f30ab71fe14c953470ab8b92e65
-      internalID: 530328987
+      internalID: 7714175187605838711
       vertices: []
       indices: 
       edges: []
@@ -273,7 +279,7 @@ TextureImporter:
         width: 64
         height: 54
       alignment: 9
-      pivot: {x: 0.5, y: 0.75}
+      pivot: {x: 0.5, y: 0.68}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -288,7 +294,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f4b5c0c187dab6944b87ff0d87f05c57
-      internalID: -1863287817
+      internalID: -843131215797097854
       vertices: []
       indices: 
       edges: []
@@ -301,8 +307,8 @@ TextureImporter:
         y: 319
         width: 138
         height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.55, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -317,7 +323,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 96822375cb21d354fbeb9d18436b7b3c
-      internalID: 2070064726
+      internalID: -9014626524120478926
       vertices: []
       indices: 
       edges: []
@@ -331,7 +337,7 @@ TextureImporter:
         width: 134
         height: 133
       alignment: 9
-      pivot: {x: 0.43, y: 0.28}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -346,36 +352,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 70f36a04eccc85c4695d77946c5c25be
-      internalID: 1950955293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Lab-Tileset_With_no_sat (1)_9
-      rect:
-        serializedVersion: 2
-        x: 705
-        y: 274
-        width: 60
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: -32}
-        - {x: 32, y: 0}
-        - {x: 0, y: 32}
-        - {x: -32, y: 0}
-      physicsShape:
-      - - {x: 0, y: -32}
-        - {x: 32, y: 0}
-        - {x: 0, y: 32}
-        - {x: -32, y: 0}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78ec032a6a9a2054c85b28b9d1fcbc7b
-      internalID: 937571916
+      internalID: 7350104913381113383
       vertices: []
       indices: 
       edges: []
@@ -404,7 +381,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7ca90c8747b6e07459ed13cbe8c54e86
-      internalID: -1282840528
+      internalID: 2282872688607661120
       vertices: []
       indices: 
       edges: []
@@ -418,7 +395,7 @@ TextureImporter:
         width: 64
         height: 182
       alignment: 9
-      pivot: {x: 0.5, y: 0.11}
+      pivot: {x: 0.5, y: 0.09}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -433,7 +410,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 18be514e70f5e32408a9027b7ab59c71
-      internalID: 398702525
+      internalID: 417186327931374438
       vertices: []
       indices: 
       edges: []
@@ -447,7 +424,7 @@ TextureImporter:
         width: 64
         height: 182
       alignment: 9
-      pivot: {x: 0.5, y: 0.11}
+      pivot: {x: 0.5, y: 0.09}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -462,7 +439,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2707304a076febf4680d8afd23408627
-      internalID: -894167978
+      internalID: 8910683181708120925
       vertices: []
       indices: 
       edges: []
@@ -476,7 +453,7 @@ TextureImporter:
         width: 66
         height: 181
       alignment: 9
-      pivot: {x: 0.5, y: 0.11}
+      pivot: {x: 0.5, y: 0.09}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -491,7 +468,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 417d27f44b4f15a4486d2c6a54e25e7f
-      internalID: 430833057
+      internalID: 2365104801121244754
       vertices: []
       indices: 
       edges: []
@@ -520,7 +497,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 071318dfe7583d847b13832f63932ebb
-      internalID: 48274299
+      internalID: -7737169240073189889
       vertices: []
       indices: 
       edges: []
@@ -549,7 +526,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: df29e409fd4b18a49a1930e2e8b52db7
-      internalID: 154705973
+      internalID: -6201457081020873995
       vertices: []
       indices: 
       edges: []
@@ -563,7 +540,7 @@ TextureImporter:
         width: 65
         height: 125
       alignment: 9
-      pivot: {x: 0.6, y: 0.18}
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -578,7 +555,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f854e249dbf14114cb925802a177f782
-      internalID: -1584480248
+      internalID: -546801369530372015
       vertices: []
       indices: 
       edges: []
@@ -592,7 +569,7 @@ TextureImporter:
         width: 65
         height: 124
       alignment: 9
-      pivot: {x: 0.8, y: 0.18}
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 0, y: -32}
@@ -607,7 +584,28 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c11ac869bb74c8b4fb46c5696a02d923
-      internalID: -1104094110
+      internalID: 407145210450492107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Tileset_With_no_sat (1)_9
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 274
+        width: 60
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfd2dd300b131d40a94c02462fedf74
+      internalID: 360803060759764283
       vertices: []
       indices: 
       edges: []
@@ -624,9 +622,27 @@ TextureImporter:
     secondaryTextures:
     - texture: {fileID: 2800000, guid: c687a454df874d34c9b61a23723abd77, type: 3}
       name: _NormalMap
-  spritePackingTag: 
+    nameFileIdTable:
+      Lab-Tileset_With_no_sat (1)_0: 8139825113134634090
+      Lab-Tileset_With_no_sat (1)_1: -1404107287201952450
+      Lab-Tileset_With_no_sat (1)_10: 2282872688607661120
+      Lab-Tileset_With_no_sat (1)_11: 417186327931374438
+      Lab-Tileset_With_no_sat (1)_12: 8910683181708120925
+      Lab-Tileset_With_no_sat (1)_13: 2365104801121244754
+      Lab-Tileset_With_no_sat (1)_14: -7737169240073189889
+      Lab-Tileset_With_no_sat (1)_15: -6201457081020873995
+      Lab-Tileset_With_no_sat (1)_16: -546801369530372015
+      Lab-Tileset_With_no_sat (1)_17: 407145210450492107
+      Lab-Tileset_With_no_sat (1)_2: -8655378200344606228
+      Lab-Tileset_With_no_sat (1)_3: 635880527090797116
+      Lab-Tileset_With_no_sat (1)_4: 4885984899622146553
+      Lab-Tileset_With_no_sat (1)_5: 7714175187605838711
+      Lab-Tileset_With_no_sat (1)_6: -843131215797097854
+      Lab-Tileset_With_no_sat (1)_7: -9014626524120478926
+      Lab-Tileset_With_no_sat (1)_8: 7350104913381113383
+      Lab-Tileset_With_no_sat (1)_9: 360803060759764283
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
