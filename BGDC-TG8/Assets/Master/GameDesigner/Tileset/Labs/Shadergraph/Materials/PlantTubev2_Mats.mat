@@ -47,7 +47,7 @@ Material:
     m_Floats:
     - _Alpha: 1
     - _Edging1: 0
-    - _Edging2: 1.09
+    - _Edging2: 0.79
     m_Colors:
     - _Color: {r: 0, g: 1367.1202, b: 1300.9073, a: 1}
     - _Color_1: {r: 238.85645, g: 238.85645, b: 238.85645, a: 1}
