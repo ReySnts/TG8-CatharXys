@@ -17,7 +17,7 @@ public class PlayerMana : MonoBehaviour
 
     void Update()
     {
-        if(currentMana <= 100)
+        if(currentMana < 100)
         {
             currentMana += manaRegen * Time.deltaTime;
             onPlayerManaChanged.Raise(this, currentMana);
@@ -26,7 +26,6 @@ public class PlayerMana : MonoBehaviour
 
     public void UseMana(Component sender, object data)
     {
-        Debug.Log("MAGIC!");
         float manaUsed = (float)data;
         currentMana -= manaUsed;
 

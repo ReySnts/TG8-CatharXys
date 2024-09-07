@@ -12,7 +12,6 @@ public class PlayerHealth : MonoBehaviour, IHealth
 
     public void takeDamage(Component sender, object data)
     {
-        Debug.Log("damaged");
         if (data is float)
         {
             float damageAmount = (float)data;
@@ -31,7 +30,6 @@ public class PlayerHealth : MonoBehaviour, IHealth
 
     public void heal(Component sender, object data)
     {
-        Debug.Log("healed");
         if (data is float)
         {
             float healAmount = (float)data;

@@ -11,8 +11,6 @@ public class EBulletDamage : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //PlayerHealth.takeDamage(damageAmount);
-            Debug.Log(damageAmount);
             onPlayerDamaged.Raise(this, damageAmount);
         }
     }
