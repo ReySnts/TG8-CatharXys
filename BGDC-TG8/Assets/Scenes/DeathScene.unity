@@ -379,11 +379,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 261442240}
+  - {fileID: 1343843576}
   - {fileID: 2125652370}
   - {fileID: 1115374887}
   - {fileID: 762851337}
   - {fileID: 1798117476}
-  - {fileID: 1343843576}
   - {fileID: 2141506312}
   - {fileID: 971031769}
   - {fileID: 395158182}
@@ -969,7 +969,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
