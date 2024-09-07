@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     #region Game Manager 
     public static GameManager instance; 
 
-    void Awake()
+    /*void Awake()
     {
         if (instance == null)
         {
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
+    }*/
     #endregion 
 
     #region Scene Management

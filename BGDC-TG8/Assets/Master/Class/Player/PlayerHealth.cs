@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour, IHealth
@@ -50,7 +51,7 @@ public class PlayerHealth : MonoBehaviour, IHealth
 
     void playerDies()
     {
-        Debug.Log("Dies");
+        SceneManager.LoadScene(4);
     }
 
     void Start()

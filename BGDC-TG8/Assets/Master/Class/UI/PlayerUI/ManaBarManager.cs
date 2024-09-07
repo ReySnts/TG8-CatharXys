@@ -11,9 +11,8 @@ public class ManaBarManager : MonoBehaviour
     {
         slider.value = 100f;
     }
-    public void updateHealthBar(Component sender, object data)
+    public void UpdateHealthBar(Component sender, object data)
     {
-        Debug.Log(data);
         float currentMana = (float)data;
 
         slider.value = currentMana;
