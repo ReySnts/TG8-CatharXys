@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6110116052970153152
+--- !u!114 &-8957449592742984192
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerIcon_Mats
-  m_Shader: {fileID: -6465566751694194690, guid: bfb0af08fe859c748a87863183250ad2, type: 3}
+  m_Name: Border_Mats
+  m_Shader: {fileID: -6465566751694194690, guid: e74bb144fd0641041a7d938ff549956b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -36,8 +36,8 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _SampleTexture2D_eee6233193aa4b948b1de1b023867bb7_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: fb4ad5e7e83792948895432bdfce03c1, type: 3}
+    - _Texture2DAsset_382d5dc1771c4d53a1812c2ac240779b_Out_0_Texture2D:
+        m_Texture: {fileID: 2800000, guid: eb6292805ff320042bdf6cd4d6320582, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -55,5 +55,5 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 71.88245, g: 51.54397, b: 86.04189, a: 0}
+    - _Color: {r: 0, g: 2743.5176, b: 32768.023, a: 0}
   m_BuildTextureStacks: []
